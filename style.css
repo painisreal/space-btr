@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
 }
-
 @keyframes text-focus-in {
     0% {
       filter: blur(12px);
@@ -14,12 +13,40 @@
     }
   }
 
+  @keyframes text-focus-in-f-e {
+    0% {
+      filter: blur(12px);
+      opacity: 0;
+    }
+    90%{
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+
   @keyframes slide-fwd-center {
     0% {
       transform: translateZ(0);
     }
     100% {
       transform: translateZ(160px);
+    }
+  }
+  
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    90%{
+      opacity:1;
+    }
+    100% {
+      opacity: 0;
     }
   }
   
@@ -45,17 +72,33 @@
         object-fit:cover; /* Ensures the video covers the entire container */
     }
     
-    .logotxt{
+    .main{
 /* font-family: 'Oswald', sans-serif;
 font-family: 'Young Serif', serif; */
-
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
         color:rgb(161, 161, 161);
         font-family: 'Kanit', sans-serif;
         font-size: 70px;
         margin-left: 15px;
         font-weight: 450;
+        animation: text-focus-in 8.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     }
- 
+
+
+
+        .fa-brands{
+        font-size: 30px;
+    }
+    
+    .fa-brands:hover{
+      cursor: pointer;
+      color: white;
+    }
+    .fa-instagram{
+      margin-right: 10px;
+    }
     .q{
         color: white;
         font-family: 'Roboto Flex', sans-serif;
@@ -63,8 +106,18 @@ font-family: 'Young Serif', serif; */
         margin-left: 15px;
         font-weight: 600;
         animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        animation: fade-out 8s ease-out both;
     }
 
+    .entry{
+      color:white;
+      display: flex;
+      justify-content: center;
+      font-family: 'Kanit', sans-serif;
+        font-size: 80px;
+        /* text-shadow: #ffffffc7 0px 0px 5px, #ffffffc7 0px 0px 15px, #ffffffc7 0px 0px 20px, #ffffffc7 0px 0px 30px, #ffffffc7 0px 0px 40px, #ffffffc7 0px 0px 50px; */
+      animation: text-focus-in-f-e 10s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    }
     .q1{
         animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     }
@@ -77,15 +130,3 @@ font-family: 'Young Serif', serif; */
       animation: text-focus-in 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     }
 
-    .entry{
-      color:rgb(161, 161, 161);
-        font-family: 'Kanit', sans-serif;
-        font-size: 50px;
-        text-align: center;
-    }
-
-    .entry:hover{
-      /* animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
-        transition-duration: 2s;
-          color:white;
-    }
