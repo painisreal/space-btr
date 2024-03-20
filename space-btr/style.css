@@ -1,0 +1,21 @@
+.glass-bg{
+    backdrop-filter: blur(2px) saturate(180%);
+    -webkit-backdrop-filter: blur(2px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+}
+#vids{
+    border-radius: 9999px;
+}
+#sidebar{
+    height: 80vh;
+    padding: 0px 5px 0px 0px;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #fff; 
+    border-radius: 50px;
+
+}
