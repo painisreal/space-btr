@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="output.css" />
     <title>Space-btr</title>
   </head>
-  <body class="text-white bg-zinc-950">
+  <body class="text-white bg-zinc-950 px-2 py-1">
     <div class="sm:hidden">
       <header class="bg-zinc-950 flex justify-between items-center p-2 py-3">
         <div id="nav-button" class="" onclick="shownav()">
@@ -31,7 +31,11 @@
           <h6 class="text-xs">A place where you can explore the real beauty</h6>
         </div>
         <div class="w-10 h-10">
-          <img src="images/logo.jpg" alt="logo" class="shadow shadow-white rounded-full">
+          <img
+            src="images/logo.jpg"
+            alt="logo"
+            class="shadow shadow-white rounded-full"
+          />
         </div>
       </header>
       <!-- !nav bar side -->
@@ -39,8 +43,8 @@
         class="sidebar glass-bg w-4/5 rounded-md hidden flex-col"
         id="sidebar"
       >
-        <header class="flex justify-between items-center bg-black">
-          <div class="py-3">
+        <header class="flex justify-between items-center">
+          <div class="py-3 px-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -243,6 +247,8 @@
         </div>
       </nav>
     </div>
+    <!-- ?dev message-->
+    <!-- !dev message -->
     <div class="dev-msg hidden sm:flex justify-center">
       <div class="absolute top-14 bottom-15 left-5 right-5">
         <div class="flex flex-col items-center">
@@ -288,6 +294,84 @@
               d="M9 1H3a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2m0 14H3V3h6zm12-2h-8v2h8v6H9v-1H6v1a2 2 0 0 0 2 2h13a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2m2-3l-4-2l1.91-.91A7.516 7.516 0 0 0 14 2.5V1a9 9 0 0 1 9 9"
             />
           </svg>
+        </div>
+      </div>
+    </div>
+    <!-- !abt us box -->
+    <div class="about-us hidden">
+      <div class="bg-slate-700 p-1 rounded-lg">
+        <div class="grid grid-cols-2 gap-2 p-2">
+          <div class="">
+            <img src="images/logo.jpg" alt="" class="rounded-xl" />
+          </div>
+          <div class="">
+            <h1 class="text-center font-bold flex items-center text-2xl">
+              About us
+              <div class="m-">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7q.275-.275.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275q.275.275.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7q-.275.275-.7.275t-.7-.275z"
+                  />
+                </svg>
+              </div>
+            </h1>
+          </div>
+          <div class="col-span-2 grid grid-auto-fit-sm gap-2">
+            <div class="p-1 border-2 rounded-md grid grid-cols-2 grid-rows-2">
+              <img
+                src="images/tamizh.jpg"
+                alt="img"
+                class="object-cover border-2 rounded-full row-span-2 aspect-square place-self-center"
+              />
+              <div class="place-self-center">
+                <p class="text-center font-bold text-lg">
+                  Tamizh Amuthan <br />
+                  Founder
+                </p>
+              </div>
+              <div class="place-self-center">
+                <p class="text-center">Founder and HR Manager</p>
+              </div>
+            </div>
+            <div class="p-1 border-2 rounded-md grid grid-cols-2 grid-rows-2">
+              <img
+                src="images/bala.jpg"
+                alt="img"
+                class="object-cover border-2 rounded-full row-span-2 aspect-square place-self-center"
+              />
+              <div class="place-self-center">
+                <p class="text-center font-bold text-lg">
+                  Bala Subramanian <br />
+                  Co-founder
+                </p>
+              </div>
+              <div class="place-self-center">
+                <p class="text-center">Co-founder and Multi media head</p>
+              </div>
+            </div>
+            <div class="p-1 border-2 rounded-md grid grid-cols-2 grid-rows-2">
+              <img
+                src="images/dj_r.jpg"
+                alt="img"
+                class="object-cover border-2 rounded-full row-span-2 aspect-square place-self-center"
+              />
+              <div class="place-self-center">
+                <p class="text-center font-bold text-lg">
+                  Riknesh<br />
+                  Co-founder
+                </p>
+              </div>
+              <div class="place-self-center">
+                <p class="text-center">Co-founder and Web Developer</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
