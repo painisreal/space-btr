@@ -11,7 +11,7 @@
   <body class="text-white bg-zinc-950 px-2 py-1">
     <div class="sm:hidden">
       <header class="bg-zinc-950 flex justify-between items-center p-2 py-3">
-        <div id="nav-button" class="" onclick="shownav()">
+        <div id="nav-button" class="" onclick="shownav() ,closeabt()">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
@@ -30,7 +30,7 @@
           </h1>
           <h6 class="text-xs">A place where you can explore the real beauty</h6>
         </div>
-        <div class="w-10 h-10">
+        <div onclick="openabt(),closenav()" class="w-10 h-10">
           <img
             src="images/logo.jpg"
             alt="logo"
@@ -298,84 +298,76 @@
       </div>
     </div>
     <!-- !abt us box -->
-    <div class="about-us hidden">
-      <div class="bg-slate-700 p-1 rounded-lg">
-        <div class="grid grid-cols-2 gap-2 p-2">
-          <div class="">
-            <img src="images/logo.jpg" alt="" class="rounded-xl" />
-          </div>
-          <div class="">
-            <h1 class="text-center font-bold flex items-center text-2xl">
-              About us
-              <div class="m-">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="currentColor"
-                    d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7q.275-.275.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275q.275.275.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7q-.275.275-.7.275t-.7-.275z"
-                  />
-                </svg>
-              </div>
-            </h1>
-          </div>
-          <div class="col-span-2 grid grid-auto-fit-sm gap-2">
-            <div class="p-1 border-2 rounded-md grid grid-cols-2 grid-rows-2">
-              <img
-                src="images/tamizh.jpg"
-                alt="img"
-                class="object-cover border-2 rounded-full row-span-2 aspect-square place-self-center"
-              />
-              <div class="place-self-center">
-                <p class="text-center font-bold text-lg">
-                  Tamizh Amuthan <br />
-                  Founder
+    <div id="abt_card_id" class="relative about-us-container hidden text-gray-950 bg-purple-300 p-1">
+        <div class="box-1 flex">
+            <aside class="aside-1">
+                <img src="images/logo.jpg" alt="" class="w-48 rounded-lg m-l">
+            </aside>
+            <aside class="aside-2 flex justify-center items-center m-1 w-2/5 text-center font-extrabold text-3xl">
+                <p class="m-l">
+                    About Us
                 </p>
-              </div>
-              <div class="place-self-center">
-                <p class="text-center">Founder and HR Manager</p>
-              </div>
-            </div>
-            <div class="p-1 border-2 rounded-md grid grid-cols-2 grid-rows-2">
-              <img
-                src="images/bala.jpg"
-                alt="img"
-                class="object-cover border-2 rounded-full row-span-2 aspect-square place-self-center"
-              />
-              <div class="place-self-center">
-                <p class="text-center font-bold text-lg">
-                  Bala Subramanian <br />
-                  Co-founder
-                </p>
-              </div>
-              <div class="place-self-center">
-                <p class="text-center">Co-founder and Multi media head</p>
-              </div>
-            </div>
-            <div class="p-1 border-2 rounded-md grid grid-cols-2 grid-rows-2">
-              <img
-                src="images/dj_r.jpg"
-                alt="img"
-                class="object-cover border-2 rounded-full row-span-2 aspect-square place-self-center"
-              />
-              <div class="place-self-center">
-                <p class="text-center font-bold text-lg">
-                  Riknesh<br />
-                  Co-founder
-                </p>
-              </div>
-              <div class="place-self-center">
-                <p class="text-center">Co-founder and Web Developer</p>
-              </div>
-            </div>
-          </div>
+               <div onclick="closeabt()">
+                  <svg class="font-extrabold absolute top-3 right-3" xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                      viewBox="0 0 512 512">
+                      <path
+                          d="M437.5 386.6L306.9 256l130.6-130.6c14.1-14.1 14.1-36.8 0-50.9-14.1-14.1-36.8-14.1-50.9 0L256 205.1 125.4 74.5c-14.1-14.1-36.8-14.1-50.9 0-14.1 14.1-14.1 36.8 0 50.9L205.1 256 74.5 386.6c-14.1 14.1-14.1 36.8 0 50.9 14.1 14.1 36.8 14.1 50.9 0L256 306.9l130.6 130.6c14.1 14.1 36.8 14.1 50.9 0 14-14.1 14-36.9 0-50.9z"
+                          fill="currentColor" />
+                  </svg>
+               </div>
+            </aside>
         </div>
+  <!-- -----------us------------------- -->
+      <div class="us-container">
+          <div class="us">
+              <div class="us-1 border-2 p-2 m-2 rounded-md flex justify-center items-center">
+                  <img src="images/tamizh profile-pic.png" alt="img" class=" mx-2 border-2 rounded-full w-5/12" />
+                  <div class="place-self-center mx-auto">
+                      <div class="text-center font-semibold text-2xl">
+                          Tamizh Amuthan
+                          <!-- <p class="text-sm font-normal">S/O Mr.Ravanan& Mrs.Ravanan</p> -->
+                          <p class="text-xl font-extrabold"> CEO</p>
+                          <p class="text-base">HR Manager</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="us-1 border-2 p-2 m-2 rounded-md flex justify-center items-center">
+                  <img src="images/bala profile-pic.png" alt="img" class=" mx-2 border-2 rounded-full w-5/12" />
+                  <div class="place-self-center mx-auto">
+                      <div class="text-center font-semibold text-2xl">
+                          Balasubramanian
+                          <!-- <p class="text-sm font-normal">S/O Mr.Ravanan& Mrs.Ravanan</p> -->
+                          <p class="text-xl font-extrabold"> CMO</p>
+                          <p class="text-base">Content Creator</p>
+                      </div>
+                  </div>
+              </div><div class="us-1 border-2 p-2 m-2 rounded-md flex justify-center items-center">
+                  <img src="images/profile-pic (3).png" alt="img" class=" mx-2 border-2 rounded-full w-5/12" />
+                  <div class="place-self-center mx-auto">
+                      <div class="text-center font-semibold text-2xl">
+                          Riknesh
+                          <!-- <p class="text-sm font-normal">S/O Mr.Ravanan& Mrs.Ravanan</p> -->
+                          <p class="text-xl font-extrabold"> CTO</p>
+                          <p class="text-base">Developer</p>
+                      </div>
+                  </div>
+              </div><div class="us-1 border-2 p-2 m-2 rounded-md flex justify-center items-center">
+                  <img src="images/woman.png" alt="img" class=" mx-2 border-2 rounded-full w-5/12" />
+                  <div class="place-self-center mx-auto">
+                      <div class="text-center font-semibold text-2xl">
+                          Rakshitha Ramesh
+                          <!-- <p class="text-sm font-normal">S/O Mr.Ravanan& Mrs.Ravanan</p> -->
+                          <p class="text-xl font-extrabold"></p>
+                          <p class="text-base">Designer</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
+  </div>
+  </div>
     <script src="nav.js"></script>
     <script src="script.js"></script>
+    <script src="abt.js"></script>
   </body>
 </html>
