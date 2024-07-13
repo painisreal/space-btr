@@ -47,55 +47,55 @@
   }
   
   .mercury {
-    background-image: url("1mercury.jpg");
+    background-image: url("images/planets/1mercury.jpg");
     animation: planets_rotation 110s infinite;
     width: 20vw;
     height: 20vw;
   }
   .venus {
-    background-image: url("2venus.jpg");
+    background-image: url("images/planets/2venus.jpg");
     animation: planets_rotation 50s infinite;
     width: 20vw;
     height: 20vw;
   }
   .earth {
-    background-image: url("3earth.jpg");
+    background-image: url("images/planets/3earth.jpg");
     animation: planets_rotation 50s infinite;
     width: 20vw;
     height: 20vw;
   }
   .mars {
-    background-image: url("4mars.jpg");
+    background-image: url("images/planets/4mars.jpg");
     animation: planets_rotation 100s infinite;
     width: 20vw;
     height: 20vw;
   }
   .jupiter {
-    background-image: url("5jupiter.jpg");
+    background-image: url("images/planets/5jupiter.jpg");
     animation: planets_rotation 60s infinite;
     width: 20vw;
     height: 20vw;
   }
   .saturn {
-    background-image: url("6saturn.jpg");
+    background-image: url("images/planets/6saturn.jpg");
     animation: planets_rotation 40s infinite;
     width: 20vw;
     height: 20vw;
   }
   .uranus {
-    background-image: url("7uranus.png");
+    background-image: url("images/planets/7uranus.png");
     animation: planets_rotation 30s infinite;
     width: 20vw;
     height: 20vw;
   }
   .neptune {
-    background-image: url("8neptune.png");
+    background-image: url("images/planets/8neptune.png");
     animation: planets_rotation 30s infinite;
     width: 20vw;
     height: 20vw;
   }
   .pluto {
-    background-image: url("9pluto.png");
+    background-image: url("images/planets/9pluto.png");
     animation: planets_rotation 40s infinite;
     width: 20vw;
     height: 20vw;
