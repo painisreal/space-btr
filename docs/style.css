@@ -50,6 +50,14 @@
     body{
       background-color: rgb(145, 145, 145);
      }
+     .side-bar{
+      height: 110vh;
+      width: 55vw;
+        padding: 0px 5px 0px 0px;
+  }
+  .hfif{
+    height: 80vh;
+ }
 }
 
 /* For laptops and PCs */
@@ -62,7 +70,15 @@
   body{
     background-color: rgb(145, 145, 145);
    }
+   .side-bar{
+    height: 110vh;
+    width: 30vw;
+      padding: 0px 5px 0px 0px;
+}
+.hfif{
+  height: 80vh;
   
+}
 }
 
 /* For large screens */
