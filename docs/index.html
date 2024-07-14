@@ -9,43 +9,11 @@
     <title>Space-btr</title>
   </head>
 
-  <body class="text-white bg-zinc-950 px-2 py-1">
-    <div class="">
-      <header class="bg-zinc-950 flex justify-between items-center p-2 py-3">
-        <div id="nav-button" class="" onclick="shownav() ,closeabt()">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            viewBox="0 0 256 256"
-          >
-            <path
-              fill="currentColor"
-              d="M245.11 60.68c-7.65-13.19-27.84-16.16-58.5-8.66A95.93 95.93 0 0 0 32 128a98 98 0 0 0 .78 12.31C5.09 169 5.49 186 10.9 195.32C16 204.16 26.64 208 40.64 208a124.11 124.11 0 0 0 28.79-4A95.93 95.93 0 0 0 224 128a97.08 97.08 0 0 0-.77-12.25c12.5-13 20.82-25.35 23.65-35.92c1.95-7.32 1.36-13.76-1.77-19.15M128 48a80.11 80.11 0 0 1 78 62.2c-17.06 16.06-40.15 32.53-62.07 45.13c-27.55 15.81-51.45 25.67-70.51 31.07A79.94 79.94 0 0 1 128 48M24.74 187.29c-1.46-2.51-.65-7.24 2.22-13a79.05 79.05 0 0 1 10.29-15.05a96 96 0 0 0 18 31.32c-17.25 2.9-28.01 1.05-30.51-3.27M128 208a79.45 79.45 0 0 1-38.56-9.94a370 370 0 0 0 62.43-28.86c21.58-12.39 40.68-25.82 56.07-39.08A80.07 80.07 0 0 1 128 208M231.42 75.69c-1.7 6.31-6.19 13.53-12.63 21.13a95.69 95.69 0 0 0-18-31.35c14.21-2.35 27.37-2.17 30.5 3.24c.9 1.57.95 3.92.13 6.98"
-            />
-          </svg>
-        </div>
-        <div class="text-center">
-          <h1 class="text-4xl font-mono font-extrabold tracking-tighter">
-            SPACE BTR
-          </h1>
-          <h6 class="text-xs">A place where you can explore the real beauty</h6>
-        </div>
-        <div onclick="openabt(),closenav()" class="w-10 h-10">
-          <img
-            src="images/logo.jpg"
-            alt="logo"
-            class="shadow shadow-white rounded-full"
-          />
-        </div>
-      </header>
-      <!-- !nav bar side -->
-      <nav
-        class="sidebar glass-bg w-4/5 rounded-md hidden flex-col"
-        id="sidebar"
-      >
-        <header class="flex justify-between items-center">
-          <div class="py-3 px-3">
+  <body class="text-white px-2 py-1 ">  <!--lg:w-7/12 m-x> -->
+<div class="opt">
+      <div class="rounded-2xl">
+        <header class="bg-zinc-950 flex justify-between items-center p-2 py-3 rounded-tr-2xl rounded-tl-2xl">
+          <div id="nav-button" class="" onclick="shownav() ,closeabt()">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -58,396 +26,562 @@
               />
             </svg>
           </div>
-          <div class="text-3xl font-mono font-bold tracking-tighter">
-            Explore
+          <div class="text-center">
+            <h1 class="text-4xl font-mono font-extrabold tracking-tighter">
+              SPACE BTR
+            </h1>
+            <h6 class="text-xs">A place where you can explore the real beauty</h6>
           </div>
-          <div id="close" class="mx-2" onclick="closenav()">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="currentColor"
-                d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7q.275-.275.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275q.275.275.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7q-.275.275-.7.275t-.7-.275z"
-              />
-            </svg>
+          <div onclick="openabt(),closenav()" class="w-10 h-10">
+            <img
+              src="images/logo.jpg"
+              alt="logo"
+              class="shadow shadow-white rounded-full"
+            />
           </div>
         </header>
-        <div class="scrollbox overflow-auto">
-          <div class="scrollbox-inner">
-            <!-- !content area -->
-            <div class="">
-              <div class="items p-1">
-                <!-- !single-items -->
-                <div
-                  class="item outline m-1.5 my-2 p-1 outline-1 rounded-md flex items-center"
+        <!-- !nav bar side -->
+       <div id="sidebar" class="hidden">
+          <nav
+            class="sidebar glass-bg w-4/5 rounded-md  flex-col" id="sidebar-srl" >
+            <header class="flex justify-between items-center" >
+              <div class="py-3 px-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 256 256"
                 >
-                  <div class="m-2 grid grid-cols-1">
-                    <!--* 000000000000000 -->
-                    <div class="planets mercury"></div>
-                  </div>
-                  <div class="about mx-3 p-0 w-1/2">
-                    <h1 class="text-lg">
-                      <p class="font-extrabold">Mercury</p>
-                      <p class="text-xs">
-                        The smallest and closest planet to the Sun, known for
-                        its extreme temperatures.
-                      </p>
-                    </h1>
+                  <path
+                    fill="currentColor"
+                    d="M245.11 60.68c-7.65-13.19-27.84-16.16-58.5-8.66A95.93 95.93 0 0 0 32 128a98 98 0 0 0 .78 12.31C5.09 169 5.49 186 10.9 195.32C16 204.16 26.64 208 40.64 208a124.11 124.11 0 0 0 28.79-4A95.93 95.93 0 0 0 224 128a97.08 97.08 0 0 0-.77-12.25c12.5-13 20.82-25.35 23.65-35.92c1.95-7.32 1.36-13.76-1.77-19.15M128 48a80.11 80.11 0 0 1 78 62.2c-17.06 16.06-40.15 32.53-62.07 45.13c-27.55 15.81-51.45 25.67-70.51 31.07A79.94 79.94 0 0 1 128 48M24.74 187.29c-1.46-2.51-.65-7.24 2.22-13a79.05 79.05 0 0 1 10.29-15.05a96 96 0 0 0 18 31.32c-17.25 2.9-28.01 1.05-30.51-3.27M128 208a79.45 79.45 0 0 1-38.56-9.94a370 370 0 0 0 62.43-28.86c21.58-12.39 40.68-25.82 56.07-39.08A80.07 80.07 0 0 1 128 208M231.42 75.69c-1.7 6.31-6.19 13.53-12.63 21.13a95.69 95.69 0 0 0-18-31.35c14.21-2.35 27.37-2.17 30.5 3.24c.9 1.57.95 3.92.13 6.98"
+                  />
+                </svg>
+              </div>
+              <div class="text-3xl font-mono font-bold tracking-tighter">
+                Explore
+              </div>
+              <div id="close" class="mx-2" onclick="closenav()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7q.275-.275.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275q.275.275.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7q-.275.275-.7.275t-.7-.275z"
+                  />
+                </svg>
+              </div>
+            </header>
+            <div class="scrollbox overflow-auto">
+              <div class="scrollbox-inner ">
+                <!-- !content area -->
+                <div class="">
+                  <div class="items p-1">
+                    <!-- !single-items -->
+                    <div
+                      class="item outline m-1.5 my-2 p-1 outline-1 rounded-md flex items-center"
+                    >
+                      <div class="m-2 grid grid-cols-1">
+                        <!--* 000000000000000 -->
+                        <div class="planets mercury"></div>
+                      </div>
+                      <div class="about mx-3 p-0 w-1/2">
+                        <h1 class="text-lg">
+                          <p class="font-extrabold">Mercury</p>
+                          <p class="text-xs">
+                            The smallest and closest planet to the Sun, known for
+                            its extreme temperatures.
+                          </p>
+                        </h1>
+                      </div>
+                    </div>
+                    <!-- !single-items -->
+                    <div
+                      class="item outline m-1.5 my-2 p-1 outline-1 rounded-md flex items-center"
+                    >
+                      <div class="m-2 grid grid-cols-1">
+                        <!--* 000000000000000 -->
+                        <div class="planets venus"></div>
+                      </div>
+                      <div class="about mx-3 p-0 w-1/2">
+                        <h1 class="text-lg">
+                          <p class="font-extrabold">Venus</p>
+                          <p class="text-xs">
+                            Earth's "sister planet" with a thick, toxic atmosphere
+                            and surface temperatures hot enough to melt lead.
+                          </p>
+                        </h1>
+                      </div>
+                    </div>
+                    <!-- !single-items -->
+    
+                    <div
+                      class="item outline m-1.5 my-2 p-1 outline-1 rounded-md flex items-center"
+                    >
+                      <div class="m-2 grid grid-cols-1">
+                        <!--* 000000000000000 -->
+    
+                        <div class="planets earth"></div>
+                      </div>
+                      <div class="about mx-3 p-0 w-1/2">
+                        <h1 class="text-lg">
+                          <p class="font-extrabold">Earth</p>
+                          <p class="text-xs">
+                            The only planet known to support life, with diverse
+                            ecosystems and liquid water.
+                          </p>
+                        </h1>
+                      </div>
+                    </div>
+    
+                    <!-- !single-items -->
+                    <div
+                      class="item outline m-1.5 my-2 p-1 outline-1 rounded-md flex items-center"
+                    >
+                      <div class="m-2 grid grid-cols-1">
+                        <!--* 000000000000000 -->
+    
+                        <div class="planets mars"></div>
+                      </div>
+                      <div class="about mx-3 p-0 w-1/2">
+                        <h1 class="text-lg">
+                          <p class="font-extrabold">Mars</p>
+                          <p class="text-xs">
+                            The "Red Planet," famous for its red color, ancient
+                            riverbeds, and the largest volcano in the solar system.
+                          </p>
+                        </h1>
+                      </div>
+                    </div>
+                    <!-- !single-items --><!-- !single-items -->
+                    <div
+                      class="item outline m-1.5 my-2 p-1 outline-1 rounded-md flex items-center"
+                    >
+                      <div class="m-2 grid grid-cols-1">
+                        <!--* 000000000000000 -->
+    
+                        <div class="planets jupiter"></div>
+                      </div>
+                      <div class="about mx-3 p-0 w-1/2">
+                        <h1 class="text-lg">
+                          <p class="font-extrabold">Jupiter</p>
+                          <p class="text-xs">
+                            The largest planet, a gas giant known for its Great Red
+                            Spot and dozens of moons.
+                          </p>
+                        </h1>
+                      </div>
+                    </div>
+                    <!-- !single-items --><!-- !single-items -->
+                    <div
+                      class="item outline m-1.5 my-2 p-1 outline-1 rounded-md flex items-center"
+                    >
+                      <div class="m-2 grid grid-cols-1">
+                        <!--* 000000000000000 -->
+    
+                        <div class="planets saturn"></div>
+                      </div>
+                      <div class="about mx-3 p-0 w-1/2">
+                        <h1 class="text-lg">
+                          <p class="font-extrabold">Saturn</p>
+                          <p class="text-xs">
+                            The second-largest planet, distinguished by its
+                            extensive and bright ring system.
+                          </p>
+                        </h1>
+                      </div>
+                    </div>
+                    <!-- !single-items --><!-- !single-items -->
+                    <div
+                      class="item outline m-1.5 my-2 p-1 outline-1 rounded-md flex items-center"
+                    >
+                      <div class="m-2 grid grid-cols-1">
+                        <!--* 000000000000000 -->
+    
+                        <div class="planets uranus"></div>
+                      </div>
+                      <div class="about mx-3 p-0 w-1/2">
+                        <h1 class="text-lg">
+                          <p class="font-extrabold">Uranus</p>
+                          <p class="text-xs">
+                            An ice giant with a unique sideways rotation and faint
+                            rings.
+                          </p>
+                        </h1>
+                      </div>
+                    </div>
+                    <!-- !single-items -->
+                    <div
+                      class="item outline m-1.5 my-2 p-1 outline-1 rounded-md flex items-center"
+                    >
+                      <div class="m-2 grid grid-cols-1">
+                        <!--* 000000000000000 -->
+    
+                        <div class="planets neptune"></div>
+                      </div>
+                      <div class="about mx-3 p-0 w-1/2">
+                        <h1 class="text-lg">
+                          <p class="font-extrabold">Neptune</p>
+                          <p class="text-xs">
+                            The farthest planet from the Sun, an ice giant known for
+                            its intense blue color and strong winds.
+                          </p>
+                        </h1>
+                      </div>
+                    </div>
+                    <!-- !single-items -->
+                    <div
+                      class="item outline m-1.5 my-2 p-1 outline-1 rounded-md flex items-center"
+                    >
+                      <div class="m-2 grid grid-cols-1">
+                        <!--* 000000000000000 -->
+                        <div class="planets pluto"></div>
+                      </div>
+                      <div class="about mx-3 p-0 w-1/2">
+                        <h1 class="text-lg">
+                          <p class="font-extrabold">Pluto</p>
+                          <p class="text-xs">
+                            It is declared as a darf planet. It is about the size of
+                            austrlia
+                          </p>
+                        </h1>
+                      </div>
+                    </div>
+                    <!-- !single-items -->
                   </div>
                 </div>
-                <!-- !single-items -->
-                <div
-                  class="item outline m-1.5 my-2 p-1 outline-1 rounded-md flex items-center"
-                >
-                  <div class="m-2 grid grid-cols-1">
-                    <!--* 000000000000000 -->
-                    <div class="planets venus"></div>
-                  </div>
-                  <div class="about mx-3 p-0 w-1/2">
-                    <h1 class="text-lg">
-                      <p class="font-extrabold">Venus</p>
-                      <p class="text-xs">
-                        Earth's "sister planet" with a thick, toxic atmosphere
-                        and surface temperatures hot enough to melt lead.
-                      </p>
-                    </h1>
-                  </div>
-                </div>
-                <!-- !single-items -->
-
-                <div
-                  class="item outline m-1.5 my-2 p-1 outline-1 rounded-md flex items-center"
-                >
-                  <div class="m-2 grid grid-cols-1">
-                    <!--* 000000000000000 -->
-
-                    <div class="planets earth"></div>
-                  </div>
-                  <div class="about mx-3 p-0 w-1/2">
-                    <h1 class="text-lg">
-                      <p class="font-extrabold">Earth</p>
-                      <p class="text-xs">
-                        The only planet known to support life, with diverse
-                        ecosystems and liquid water.
-                      </p>
-                    </h1>
-                  </div>
-                </div>
-
-                <!-- !single-items -->
-                <div
-                  class="item outline m-1.5 my-2 p-1 outline-1 rounded-md flex items-center"
-                >
-                  <div class="m-2 grid grid-cols-1">
-                    <!--* 000000000000000 -->
-
-                    <div class="planets mars"></div>
-                  </div>
-                  <div class="about mx-3 p-0 w-1/2">
-                    <h1 class="text-lg">
-                      <p class="font-extrabold">Mars</p>
-                      <p class="text-xs">
-                        The "Red Planet," famous for its red color, ancient
-                        riverbeds, and the largest volcano in the solar system.
-                      </p>
-                    </h1>
-                  </div>
-                </div>
-                <!-- !single-items --><!-- !single-items -->
-                <div
-                  class="item outline m-1.5 my-2 p-1 outline-1 rounded-md flex items-center"
-                >
-                  <div class="m-2 grid grid-cols-1">
-                    <!--* 000000000000000 -->
-
-                    <div class="planets jupiter"></div>
-                  </div>
-                  <div class="about mx-3 p-0 w-1/2">
-                    <h1 class="text-lg">
-                      <p class="font-extrabold">Jupiter</p>
-                      <p class="text-xs">
-                        The largest planet, a gas giant known for its Great Red
-                        Spot and dozens of moons.
-                      </p>
-                    </h1>
-                  </div>
-                </div>
-                <!-- !single-items --><!-- !single-items -->
-                <div
-                  class="item outline m-1.5 my-2 p-1 outline-1 rounded-md flex items-center"
-                >
-                  <div class="m-2 grid grid-cols-1">
-                    <!--* 000000000000000 -->
-
-                    <div class="planets saturn"></div>
-                  </div>
-                  <div class="about mx-3 p-0 w-1/2">
-                    <h1 class="text-lg">
-                      <p class="font-extrabold">Saturn</p>
-                      <p class="text-xs">
-                        The second-largest planet, distinguished by its
-                        extensive and bright ring system.
-                      </p>
-                    </h1>
-                  </div>
-                </div>
-                <!-- !single-items --><!-- !single-items -->
-                <div
-                  class="item outline m-1.5 my-2 p-1 outline-1 rounded-md flex items-center"
-                >
-                  <div class="m-2 grid grid-cols-1">
-                    <!--* 000000000000000 -->
-
-                    <div class="planets uranus"></div>
-                  </div>
-                  <div class="about mx-3 p-0 w-1/2">
-                    <h1 class="text-lg">
-                      <p class="font-extrabold">Uranus</p>
-                      <p class="text-xs">
-                        An ice giant with a unique sideways rotation and faint
-                        rings.
-                      </p>
-                    </h1>
-                  </div>
-                </div>
-                <!-- !single-items -->
-                <div
-                  class="item outline m-1.5 my-2 p-1 outline-1 rounded-md flex items-center"
-                >
-                  <div class="m-2 grid grid-cols-1">
-                    <!--* 000000000000000 -->
-
-                    <div class="planets neptune"></div>
-                  </div>
-                  <div class="about mx-3 p-0 w-1/2">
-                    <h1 class="text-lg">
-                      <p class="font-extrabold">Neptune</p>
-                      <p class="text-xs">
-                        The farthest planet from the Sun, an ice giant known for
-                        its intense blue color and strong winds.
-                      </p>
-                    </h1>
-                  </div>
-                </div>
-                <!-- !single-items -->
-                <div
-                  class="item outline m-1.5 my-2 p-1 outline-1 rounded-md flex items-center"
-                >
-                  <div class="m-2 grid grid-cols-1">
-                    <!--* 000000000000000 -->
-                    <div class="planets pluto"></div>
-                  </div>
-                  <div class="about mx-3 p-0 w-1/2">
-                    <h1 class="text-lg">
-                      <p class="font-extrabold">Pluto</p>
-                      <p class="text-xs">
-                        It is declared as a darf planet. It is about the size of
-                        austrlia
-                      </p>
-                    </h1>
-                  </div>
-                </div>
-                <!-- !single-items -->
               </div>
             </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-    <!-- ?dev message-->
-    <!-- !dev message -->
-    <!-- <div class="dev-msg hidden sm:flex justify-center">
-      <div class="absolute top-14 bottom-15 left-5 right-5">
-        <div class="flex flex-col items-center">
-          <h1 class="font-bold text-lg">
-            This website is currently not available for devices other than
-            mobiles
-          </h1>
-          <div class="flex justify-center mb-4">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="15%"
-              height="15%"
-              viewBox="0 0 24 24"
+          </nav>
+       </div>
+      </div>
+      <!-- !abt us box -->
+      <div
+        id="abt_card_id"
+        class="side-bar overflow-auto about-us-container hidden text-gray-950 bg-purple-300 pl-1"
+      >
+        <div class="bg-purple-300 sticky top-0">
+          <div class="box-1 flex justify-around">
+            <aside class="aside-1">
+              <img src="images/logo.jpg" alt="" class="w-24 rounded-lg m-1" />
+            </aside>
+            <aside
+              class="aside-2 flex justify-center items-center m-1 w-2/5 text-center font-extrabold text-3xl mr-12"
             >
-              <path
-                fill="currentColor"
-                d="M6 23q-.825 0-1.412-.587T4 21V3q0-.825.588-1.412T6 1h10q.825 0 1.413.588T18 3v4h-2V6H6v12h10v-1h2v4q0 .825-.587 1.413T16 23zm8.95-7l-4.25-4.25l1.4-1.4l2.85 2.85l5.65-5.65l1.4 1.4z"
-              />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="15%"
-              height="15%"
-              viewBox="0 0 24 24"
+              <p class="text-center">About Us</p>
+              <div onclick="closeabt()">
+                <svg
+                  class="font-extrabold absolute top-3 right-3"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M437.5 386.6L306.9 256l130.6-130.6c14.1-14.1 14.1-36.8 0-50.9-14.1-14.1-36.8-14.1-50.9 0L256 205.1 125.4 74.5c-14.1-14.1-36.8-14.1-50.9 0-14.1 14.1-14.1 36.8 0 50.9L205.1 256 74.5 386.6c-14.1 14.1-14.1 36.8 0 50.9 14.1 14.1 36.8 14.1 50.9 0L256 306.9l130.6 130.6c14.1 14.1 36.8 14.1 50.9 0 14-14.1 14-36.9 0-50.9z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </aside>
+          </div>
+        </div>
+        <!-- -----------us------------------- -->
+        <div class="us-container">
+          <div class="us">
+            <div
+              class="us-1 border-2 p-2 m-2 rounded-md flex justify-center items-center"
             >
-              <path
-                fill="currentColor"
-                d="M1 4.27L2.28 3L20 20.72L18.73 22l-2-2H0v-2h4a2 2 0 0 1-2-2V6c0-.22.04-.43.1-.63zM4 16h8.73L4 7.27zm16 0V6H7.82l-2-2H20a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h4v2h-2.18l-4-4z"
+              <img
+                src="images/tamizh profile-pic.png"
+                alt="img"
+                class="mx-2 border-2 rounded-full w-5/12"
               />
-            </svg>
-          </div>
-          <h1 class="font-bold text-lg">
-            Landscape mode is not supported; because its under developement
-          </h1>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="15%"
-            height="15%"
-            viewBox="0 0 24 24"
-          >
-            <path
-              fill="currentColor"
-              d="M9 1H3a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2m0 14H3V3h6zm12-2h-8v2h8v6H9v-1H6v1a2 2 0 0 0 2 2h13a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2m2-3l-4-2l1.91-.91A7.516 7.516 0 0 0 14 2.5V1a9 9 0 0 1 9 9"
-            />
-          </svg>
-        </div>
-      </div>
-    </div> -->
-    <!-- !abt us box -->
-    <div
-      id="abt_card_id"
-      class="side-bar overflow-auto about-us-container hidden text-gray-950 bg-purple-300 pl-1"
-    >
-      <div class="bg-purple-300 sticky top-0">
-        <div class="box-1 flex">
-          <aside class="aside-1">
-            <img src="images/logo.jpg" alt="" class="w-48 rounded-lg m-1" />
-          </aside>
-          <aside
-            class="aside-2 flex justify-center items-center m-1 w-2/5 text-center font-extrabold text-3xl"
-          >
-            <p class="m-l">About Us</p>
-            <div onclick="closeabt()">
-              <svg
-                class="font-extrabold absolute top-3 right-3"
-                xmlns="http://www.w3.org/2000/svg"
-                width="22"
-                height="22"
-                viewBox="0 0 512 512"
-              >
-                <path
-                  d="M437.5 386.6L306.9 256l130.6-130.6c14.1-14.1 14.1-36.8 0-50.9-14.1-14.1-36.8-14.1-50.9 0L256 205.1 125.4 74.5c-14.1-14.1-36.8-14.1-50.9 0-14.1 14.1-14.1 36.8 0 50.9L205.1 256 74.5 386.6c-14.1 14.1-14.1 36.8 0 50.9 14.1 14.1 36.8 14.1 50.9 0L256 306.9l130.6 130.6c14.1 14.1 36.8 14.1 50.9 0 14-14.1 14-36.9 0-50.9z"
-                  fill="currentColor"
-                />
-              </svg>
-            </div>
-          </aside>
-        </div>
-      </div>
-      <!-- -----------us------------------- -->
-      <div class="us-container">
-        <div class="us">
-          <div
-            class="us-1 border-2 p-2 m-2 rounded-md flex justify-center items-center"
-          >
-            <img
-              src="images/tamizh profile-pic.png"
-              alt="img"
-              class="mx-2 border-2 rounded-full w-5/12"
-            />
-            <div class="place-self-center mx-auto">
-              <div class="text-center font-semibold text-2xl">
-                Tamizh Amuthan
-                <!-- <p class="text-sm font-normal">S/O Mr.Ravanan& Mrs.Ravanan</p> -->
-                <p class="text-xl font-extrabold">CEO</p>
-                <p class="text-base">HR Manager</p>
+              <div class="place-self-center mx-auto">
+                <div class="text-center font-semibold text-2xl">
+                  Tamizh Amuthan
+                  <!-- <p class="text-sm font-normal">S/O Mr.Ravanan& Mrs.Ravanan</p> -->
+                  <p class="text-xl font-extrabold">CEO</p>
+                  <p class="text-base">HR Manager</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            class="us-1 border-2 p-2 m-2 rounded-md flex justify-center items-center"
-          >
-            <img
-              src="images/bala profile-pic.png"
-              alt="img"
-              class="mx-2 border-2 rounded-full w-5/12"
-            />
-            <div class="place-self-center mx-auto">
-              <div class="text-center font-semibold text-2xl">
-                Balasubramanian
-                <!-- <p class="text-sm font-normal">S/O Mr.Ravanan& Mrs.Ravanan</p> -->
-                <p class="text-xl font-extrabold">CMO</p>
-                <p class="text-base">Content Creator</p>
+            <div
+              class="us-1 border-2 p-2 m-2 rounded-md flex justify-center items-center"
+            >
+              <img
+                src="images/bala profile-pic.png"
+                alt="img"
+                class="mx-2 border-2 rounded-full w-5/12"
+              />
+              <div class="place-self-center mx-auto">
+                <div class="text-center font-semibold text-2xl">
+                  Balasubramanian
+                  <!-- <p class="text-sm font-normal">S/O Mr.Ravanan& Mrs.Ravanan</p> -->
+                  <p class="text-xl font-extrabold">CMO</p>
+                  <p class="text-base">Content Creator</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            class="us-1 border-2 p-2 m-2 rounded-md flex justify-center items-center"
-          >
-            <img
-              src="images/profile-pic (3).png"
-              alt="img"
-              class="mx-2 border-2 rounded-full w-5/12"
-            />
-            <div class="place-self-center mx-auto">
-              <div class="text-center font-semibold text-2xl">
-                Riknesh
-                <!-- <p class="text-sm font-normal">S/O Mr.Ravanan& Mrs.Ravanan</p> -->
-                <p class="text-xl font-extrabold">CTO</p>
-                <p class="text-base">Developer</p>
+            <div
+              class="us-1 border-2 p-2 m-2 rounded-md flex justify-center items-center"
+            >
+              <img
+                src="images/profile-pic (3).png"
+                alt="img"
+                class="mx-2 border-2 rounded-full w-5/12"
+              />
+              <div class="place-self-center mx-auto">
+                <div class="text-center font-semibold text-2xl">
+                  Riknesh
+                  <!-- <p class="text-sm font-normal">S/O Mr.Ravanan& Mrs.Ravanan</p> -->
+                  <p class="text-xl font-extrabold">CTO</p>
+                  <p class="text-base">Developer</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            class="us-1 border-2 p-2 m-2 rounded-md flex justify-center items-center"
-          >
-            <img
-              src="images/woman.png"
-              alt="img"
-              class="mx-2 border-2 rounded-full w-5/12"
-            />
-            <div class="place-self-center mx-auto">
-              <div class="text-center font-semibold text-2xl">
-                Rakshitha Ramesh
-                <!-- <p class="text-sm font-normal">S/O Mr.Ravanan& Mrs.Ravanan</p> -->
-                <p class="text-xl font-extrabold"></p>
-                <p class="text-base">Designer</p>
+            <div
+              class="us-1 border-2 p-2 m-2 rounded-md flex justify-center items-center"
+            >
+              <img
+                src="images/woman.png"
+                alt="img"
+                class="mx-2 border-2 rounded-full w-5/12"
+              />
+              <div class="place-self-center mx-auto">
+                <div class="text-center font-semibold text-2xl">
+                  Rakshitha Ramesh
+                  <!-- <p class="text-sm font-normal">S/O Mr.Ravanan& Mrs.Ravanan</p> -->
+                  <p class="text-xl font-extrabold"></p>
+                  <p class="text-base">Designer</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            class="us-1 border-2 p-2 m-2 rounded-md flex justify-center items-center"
-          >
-            <img
-              src="images/boy.png"
-              alt="img"
-              class="mx-2 border-2 rounded-full w-5/12"
-            />
-            <div class="place-self-center mx-auto">
-              <div class="text-center font-semibold text-2xl">
-                Dhanush
-                <!-- <p class="text-sm font-normal">S/O Mr.Ravanan& Mrs.Ravanan</p> -->
-                <p class="text-xl font-extrabold"></p>
-                <p class="text-base">Media (Editor)</p>
+            <div
+              class="us-1 border-2 p-2 m-2 rounded-md flex justify-center items-center"
+            >
+              <img
+                src="images/boy.png"
+                alt="img"
+                class="mx-2 border-2 rounded-full w-5/12"
+              />
+              <div class="place-self-center mx-auto">
+                <div class="text-center font-semibold text-2xl">
+                  Dhanush
+                  <!-- <p class="text-sm font-normal">S/O Mr.Ravanan& Mrs.Ravanan</p> -->
+                  <p class="text-xl font-extrabold"></p>
+                  <p class="text-base">Media (Editor)</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            class="us-1 border-2 p-2 m-2 rounded-md flex justify-center items-center"
-          >
-            <img
-              src="images/woman.png"
-              alt="img"
-              class="mx-2 border-2 rounded-full w-5/12"
-            />
-            <div class="place-self-center mx-auto">
-              <div class="text-center font-semibold text-2xl">
-                Dharshini
-                <!-- <p class="text-sm font-normal">S/O Mr.Ravanan& Mrs.Ravanan</p> -->
-                <p class="text-xl font-extrabold"></p>
-                <p class="text-base">Media (Editor)</p>
+            <div
+              class="us-1 border-2 p-2 m-2 rounded-md flex justify-center items-center"
+            >
+              <img
+                src="images/woman.png"
+                alt="img"
+                class="mx-2 border-2 rounded-full w-5/12"
+              />
+              <div class="place-self-center mx-auto">
+                <div class="text-center font-semibold text-2xl">
+                  Dharshini
+                  <!-- <p class="text-sm font-normal">S/O Mr.Ravanan& Mrs.Ravanan</p> -->
+                  <p class="text-xl font-extrabold"></p>
+                  <p class="text-base">Media (Editor)</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <script src="nav.js"></script>
-    <script src="script.js"></script>
-    <script src="abt.js"></script>
+      <div class="bg-zinc-950 rounded-br-2xl rounded-bl-2xl">
+       <div class="contents-main">
+        <div class="dummy-para p-2">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam omnis repudiandae excepturi nostrum officiis repellat sequi magni commodi reprehenderit fugit culpa quasi ullam dolores, cum nihil pariatur molestias necessitatibus dolor.
+          Asperiores tenetur saepe corporis iste. Quod nemo labore amet, similique tenetur dicta debitis harum dolorem delectus voluptate tempora nihil. Ratione, iure eum. Vero rerum nam delectus consectetur consequuntur ducimus quam.
+          Optio corporis maiores nulla perferendis, mollitia quas obcaecati amet vero quos fugit adipisci doloribus tenetur totam reiciendis ipsa sequi saepe velit dolorem officiis quae voluptatum in, id accusamus aliquid? Cum.
+          Totam ipsum inventore doloribus qui saepe a odit explicabo ex, quo numquam corrupti ab recusandae delectus rem aliquid enim expedita earum aspernatur harum, libero voluptate quos? Debitis nisi aspernatur aut!
+          Debitis animi error nulla incidunt qui, praesentium explicabo enim perferendis vitae voluptatibus voluptates omnis eaque modi iure quam nostrum quas, quidem minima fugiat ab cupiditate nisi. Libero sequi impedit ea.
+          Vel maiores quod soluta natus, quaerat in non sed aspernatur, impedit quas est eligendi quia et inventore quos expedita labore asperiores praesentium ipsa laudantium cupiditate itaque. Quibusdam voluptatem cum eum.
+          Debitis obcaecati officia libero ea, in, velit dolorum sunt praesentium quia quae sed ipsa provident doloremque blanditiis dolor enim est molestiae commodi. Animi pariatur voluptates vitae quod suscipit blanditiis nesciunt?
+          Expedita natus ipsa repellat vero magnam enim pariatur corporis consectetur quibusdam ut quia atque suscipit totam esse, blanditiis, temporibus error assumenda eum autem nam. Voluptas adipisci doloribus sint distinctio iusto.
+          Maxime fugit culpa suscipit sint perferendis ducimus aliquam incidunt tempore facilis, et accusantium dolorum laborum laboriosam, adipisci ullam! Excepturi saepe at officiis laudantium quaerat vitae cum eius est quisquam unde.
+          Alias nobis sequi dignissimos atque? Libero fugiat nobis architecto omnis, quidem voluptatum ad voluptatibus et consequatur rem mollitia assumenda aliquid quas numquam quo excepturi iste corrupti necessitatibus! Est, porro neque.
+          Delectus explicabo alias aut nihil iure aliquam! Dignissimos, pariatur consectetur, soluta consequuntur accusamus modi cum eligendi culpa aspernatur quisquam laborum veritatis odit aperiam harum! Ipsum a cumque voluptates quam minus.
+          Id libero odit, distinctio eligendi necessitatibus quam voluptates atque quia doloribus aperiam ad. Eum sequi id architecto perferendis? Doloremque ducimus saepe perspiciatis quae, deserunt rem dolorum itaque dicta consequuntur facere?
+          Dicta atque vitae officia. Amet commodi sit excepturi, error consectetur optio? Eligendi animi, nobis eaque facere, molestiae aliquam quam, enim eum eveniet delectus aspernatur doloremque optio omnis mollitia. Dolorum, soluta?
+          Neque ut nemo excepturi maiores accusantium eum sapiente, inventore, voluptatibus et minima exercitationem placeat? Quas quaerat, porro, modi atque facilis incidunt officiis voluptates quam maiores beatae, delectus magni praesentium fuga?
+          Saepe debitis error explicabo dolorem cumque non labore ea incidunt, reprehenderit necessitatibus. Error veniam porro, ratione quas veritatis delectus! Perferendis facilis ad aperiam, iure animi ab fuga dolore accusamus quibusdam.
+          Fugiat laboriosam debitis ducimus ipsa hic expedita voluptates veniam error distinctio est aperiam, minima excepturi dolorum beatae architecto fugit illo aliquid consequuntur quibusdam totam? Maxime cumque necessitatibus omnis libero magni.
+          Sint magni alias consequatur consectetur, mollitia officiis atque, quos ab rerum architecto itaque ut iusto, earum porro nulla blanditiis placeat error adipisci magnam illum voluptates aperiam laborum dolore saepe? Doloribus!
+          Vel temporibus quae eveniet aut omnis harum itaque corporis voluptas iusto, alias veritatis fugiat? Odio iure dolor sit omnis, nulla nostrum, facilis ullam provident dolore molestiae, molestias sed rerum quis.
+          Amet fugit totam nostrum eius unde ipsam fugiat consequuntur, commodi nihil incidunt corporis deserunt eum minima quidem qui odio veritatis esse magni adipisci voluptatum voluptate modi. Expedita ex doloribus veniam.
+          Eaque, earum consectetur voluptatum ab fuga quisquam asperiores perspiciatis cumque animi? Possimus accusantium fugit recusandae tenetur ipsum nemo numquam illum totam, temporibus dolor et soluta id earum itaque. Rem, assumenda?
+          Deleniti, aspernatur labore? Fugiat enim optio maiores accusamus unde dolore perferendis, exercitationem, rerum officiis recusandae earum quaerat fuga quibusdam alias eligendi. Modi laudantium minus officiis distinctio voluptates vero facilis quasi?
+          Harum inventore dolor, suscipit vel illum earum dolorem obcaecati ipsum sequi iste. Quisquam animi libero officia provident vitae necessitatibus non repellendus esse unde similique, dolore voluptatibus minus? Distinctio, esse alias.
+          Ea repellendus velit nihil! Voluptatum soluta dolores molestiae dolorum et ea eveniet nostrum voluptate in. Officiis, earum illo mollitia aut possimus, ipsa excepturi rem eos voluptatum tempore, nemo error consectetur.
+          Quibusdam iste itaque obcaecati similique, cum eligendi ducimus deleniti adipisci. Aperiam dicta odit, tempora nulla officiis repellat molestiae error. Itaque sapiente optio quo veniam sequi, ut beatae repudiandae id commodi.
+          Quam maxime quo aperiam tenetur quibusdam illum nemo repellendus soluta nisi accusantium facilis quidem, ipsam ea aspernatur odit non quaerat atque dolorum voluptatem quasi. Cumque magni voluptatum fuga eum dolore!
+          Iste maiores, illo vero cumque praesentium commodi corporis ipsum quia. Dolorem, nihil possimus. Similique cupiditate repudiandae neque accusamus ipsum eum debitis consequatur sunt natus, illum non, blanditiis veritatis autem inventore!
+          Totam velit dolor esse unde eveniet molestias natus eaque, et enim, non officiis dolores alias labore ullam perspiciatis nihil! Voluptates suscipit cum rerum ipsam natus sapiente modi voluptatum debitis maiores?
+          Sequi error dolorum quisquam voluptas possimus adipisci veritatis accusamus impedit labore exercitationem perspiciatis consequuntur, rem molestias itaque, odit sunt atque dolor! Modi nobis nulla iste? Fugiat qui aliquam doloremque excepturi.
+          Illum quibusdam ipsam, asperiores maiores fugit, placeat nemo rem aliquid magni cupiditate vitae dolorem aut. Architecto optio numquam earum at quos provident voluptas, quibusdam eius, rem libero nemo vero veniam!
+          Nobis maxime mollitia quae numquam odit, esse optio, voluptas dolorem eligendi nesciunt corporis cupiditate nostrum labore neque quibusdam repellat perferendis reprehenderit atque beatae temporibus dignissimos. Harum debitis animi quia ipsa?
+          Non voluptate a temporibus quaerat ullam deleniti dolorem accusamus maxime! Totam quidem suscipit aspernatur ex consectetur nisi, accusantium architecto delectus eligendi temporibus! Atque sapiente adipisci animi fugit, quod possimus sequi.
+          Voluptatem ipsa in distinctio quis, illum quasi quaerat! Esse quos incidunt, iure dolores dicta eius qui dignissimos repellendus ab cumque cupiditate illum exercitationem enim sequi impedit dolor delectus eos. Voluptatibus?
+          Esse tenetur, suscipit alias praesentium rerum ullam deserunt aliquam voluptates vero iste provident nostrum placeat ratione voluptate consequatur illo atque sed rem doloribus nisi voluptatum! Earum aspernatur itaque odit mollitia.
+          Optio, cum molestiae quod id voluptate iste magnam excepturi veniam tempora, minus dolorem fuga quo cupiditate ipsa enim ut nemo, esse dolore quia! Excepturi saepe labore iusto. Provident, repellat quod.
+          Quod, eum nemo architecto placeat repudiandae fugiat, explicabo aperiam provident assumenda odio fugit quia esse neque similique nesciunt quaerat nisi hic, voluptas voluptatum eligendi ipsa magni vitae? Ipsam, corrupti eligendi.
+          Quo delectus distinctio doloremque omnis a dolorum quibusdam culpa mollitia! At, quos! At quaerat nemo ut maxime! Quidem odit repudiandae aliquam eveniet velit? Nesciunt esse exercitationem dicta pariatur. Nisi, officia.
+          Incidunt necessitatibus commodi dignissimos! Minima ea dolore molestias, voluptas nulla consequuntur nihil! Sint esse amet voluptates voluptatibus obcaecati sit autem totam temporibus, commodi omnis laborum quas? A sapiente sequi esse!
+          Unde, voluptates ex distinctio corporis doloribus voluptate suscipit assumenda fugiat vel quibusdam! Aspernatur, vitae velit excepturi rem voluptates ducimus architecto, sed corporis eos itaque facere alias doloribus cupiditate. Accusamus, aliquam!
+          Dicta nobis error omnis, expedita quaerat voluptatem dolorem nihil facere nisi, blanditiis, dolor corporis? Dolores unde magni fugit fugiat explicabo, repellendus at expedita aspernatur hic autem? Voluptatibus voluptate vitae natus?
+          Sapiente, eaque architecto similique deserunt nulla id ipsa tempore labore veritatis tenetur quaerat ullam suscipit quasi quod ducimus, corporis, aliquid voluptatem ut. Magni incidunt quis enim, possimus repellendus maiores neque?
+          Soluta est odio et expedita distinctio dolore commodi, nihil eum eveniet aspernatur aliquam quis, dignissimos numquam adipisci facere amet alias voluptatem! Quia iste tenetur sint sequi consectetur eos aliquid culpa?
+          Debitis quo quis numquam blanditiis deserunt, non repudiandae tempore corporis perspiciatis dolore? Consequuntur quasi unde necessitatibus similique minus? Voluptates totam dignissimos, vitae aut nihil illo modi officia debitis aliquid et.
+          Esse sequi dignissimos consequatur impedit numquam iure fuga officia ipsam voluptatum molestiae. Modi sequi rem magni natus eum reiciendis nam, illum magnam sunt esse velit saepe nesciunt aperiam totam odio.
+          Inventore voluptatem minima amet rerum similique consectetur qui sed, sequi laborum eligendi beatae aliquid quae vero porro omnis nostrum cum sint, unde pariatur deleniti reiciendis ipsam rem quod iusto. Sequi.
+          Doloribus aperiam error harum corrupti quo, quas a temporibus provident est voluptatem eligendi in quasi placeat officia rem ad ut. Fuga recusandae inventore voluptate voluptatum perferendis quibusdam quo aliquam laborum.
+          Atque, id deleniti? Vero mollitia blanditiis, perspiciatis maxime dicta consequuntur totam ad ab eaque nam accusantium dignissimos quibusdam velit alias pariatur a, sit laudantium ipsam est quia, culpa quidem dolorum.
+          Officiis deleniti at sint, soluta delectus ratione ullam ea, quod architecto ipsam quos omnis provident neque esse in inventore, pariatur fugit! Provident odit harum voluptatem nostrum recusandae. Maiores, eaque inventore.
+          Nisi magni repellendus, molestias reiciendis delectus facilis ut nesciunt aperiam qui sit, possimus repellat obcaecati eius corporis aut nemo? Reiciendis quia, reprehenderit soluta fuga iusto quas impedit necessitatibus inventore quae!
+          Quia quos sint illum? Culpa beatae provident numquam vero minus eum dolores quae in blanditiis. Delectus reprehenderit quibusdam animi sequi molestiae veritatis tempora, officia et dolore inventore fuga adipisci laborum?
+          Saepe molestias, dolorum excepturi similique adipisci necessitatibus corporis fugiat, labore deserunt incidunt quisquam quod in exercitationem, harum illo reprehenderit? Dolores, consectetur veniam incidunt similique nulla impedit quia. Dolorem, maxime quo.
+          Enim dolorem, repellendus quasi itaque mollitia nihil, architecto quo magni fuga, beatae quia provident dolore accusamus perspiciatis consequuntur illo aliquid ducimus! Illo hic doloremque quis, nam nobis eaque qui nemo.
+          Quam molestiae ipsa labore sapiente ducimus animi placeat, architecto corrupti esse, ad, dicta voluptatem dolorem nihil accusantium? Libero voluptatum, consectetur porro earum adipisci voluptatibus quas, esse maiores quos dignissimos nihil!
+          Amet eligendi soluta ratione unde voluptas repellendus in aliquam a rem nihil, voluptates ducimus corrupti explicabo odio dolores maxime minus officiis perspiciatis. Accusamus quos cupiditate sequi dignissimos laudantium totam est?
+          Excepturi ipsam dolorem dignissimos dolores? Sit culpa rerum dicta aut nobis aliquid debitis illo hic iste laudantium dolore, ipsum aliquam quasi molestias, consequuntur soluta, numquam sapiente quas esse minima aperiam.
+          Eaque consectetur nulla libero aliquid unde quam et impedit doloremque quia, voluptate ducimus rem corporis amet maiores, molestiae cupiditate est fugiat explicabo ex laudantium quisquam quas illo enim sit. Praesentium.
+          Error quisquam tempora, doloremque libero quae iste suscipit veritatis dolorum sunt assumenda quas. Dolorum, sequi. Culpa voluptas amet necessitatibus architecto dolorum blanditiis, rem, id odio deserunt recusandae esse voluptatem deleniti?
+          Quam iure explicabo, suscipit sit fuga est dolorum consectetur incidunt recusandae quisquam laudantium aspernatur voluptas! Suscipit repellendus ad officia soluta, incidunt ipsam vero modi nisi quasi a velit ut. Deserunt.
+          Alias sed praesentium aut deleniti veritatis magni? Eum modi velit quisquam vero possimus, soluta dicta enim, cumque in amet nam tenetur expedita minus obcaecati aperiam repellendus, aliquid temporibus debitis repudiandae?
+          Consequatur officia, voluptate quidem in laborum ea? Illum deleniti nostrum libero provident in at ipsa! Explicabo, unde quia! Distinctio, doloribus fuga dolorum provident nulla libero et laboriosam in eos corrupti!
+          Quisquam, ducimus molestiae quae non perspiciatis libero esse corporis, inventore cumque fugiat dicta repellendus quod eum quibusdam dolor praesentium pariatur sunt nesciunt hic numquam consectetur ipsum? Vel saepe molestias numquam.
+          Quas dolorum eveniet magnam, dignissimos tempora earum vel vitae. Ex accusantium quasi sunt aut est exercitationem qui? Impedit consectetur dolores magnam modi enim deleniti numquam vero quos maiores, temporibus laudantium.
+          Hic doloremque deserunt, aliquid sequi est cumque repellendus veritatis eveniet aut quasi placeat laudantium impedit praesentium blanditiis enim explicabo, repellat nostrum velit id pariatur magnam consequuntur alias sapiente expedita? Quidem?
+          Iste vitae corporis eius blanditiis placeat architecto quo fuga debitis, quis inventore dolore optio? Illo amet ut facere laboriosam excepturi ex deleniti vero, sequi sit dolore. Adipisci voluptas officiis consectetur?
+          Dignissimos explicabo maiores ipsam? Cupiditate omnis architecto ipsum, assumenda consequuntur corporis expedita ut minima vero ipsa facilis! Laboriosam earum reprehenderit, magnam, ducimus voluptatem minus odio quibusdam beatae tempore veniam distinctio.
+          Rem excepturi eligendi exercitationem explicabo cupiditate laudantium consequatur ullam aliquid vel quis at a error necessitatibus id ea asperiores saepe veniam nostrum, eos voluptate minima. Ex repellendus cupiditate sunt temporibus.
+          Voluptates officiis repudiandae, porro accusamus nihil temporibus nobis ea, repellat omnis quibusdam placeat eum eveniet explicabo quasi ipsam impedit. Et autem amet quasi quam? Qui consequuntur totam similique rem a?
+          Molestiae veniam mollitia voluptates perspiciatis provident odio ab tempora debitis beatae. Distinctio, exercitationem nobis harum sunt quis eum quod aspernatur culpa sit repellat sapiente ut modi mollitia ab velit ipsam?
+          Provident quas quae nulla labore esse maxime perferendis velit, aut vitae, quos non eius nemo est impedit! Natus corporis porro tempora voluptatem culpa numquam omnis? Cupiditate eos amet velit rerum.
+          Facere, voluptate? Nisi maiores nulla, harum eum illum ducimus dolores laborum eaque autem impedit voluptas earum. Beatae repellendus quis veritatis incidunt, dolore tempora earum accusantium alias veniam enim! Veniam, atque!
+          Alias autem itaque illum consequuntur. Ipsum quibusdam maiores ab voluptatibus minus facilis repellat suscipit eius ex temporibus id, molestiae expedita voluptates nisi aperiam recusandae facere, corporis dolorum cupiditate adipisci earum?
+          Rerum soluta hic placeat ea delectus, eius minus excepturi neque vel. Blanditiis facilis, reprehenderit facere repellat ullam officiis voluptatibus hic sequi minima unde iste animi saepe porro voluptate perspiciatis incidunt.
+          Incidunt illum iste porro consequuntur est reiciendis explicabo laboriosam deserunt ex doloribus, ab libero nemo assumenda sed ut quas id fugiat tempora esse dignissimos debitis qui! Deleniti quae iste cupiditate.
+          Veniam facere magni impedit sunt eius dignissimos recusandae, tempora, maxime delectus, eum officia? Tempore voluptatem perferendis repellat! Animi, dicta rem? Esse id et iusto vero facere rem tenetur sint. Doloribus!
+          Accusantium fugiat ratione, ipsam vitae nisi repellendus corporis labore quasi doloremque in praesentium laudantium eligendi dicta quisquam deleniti eum ut officia. Quisquam, soluta deleniti officia fugit sit at aperiam molestiae!
+          Amet nisi a dignissimos, animi dolore, omnis illum cumque beatae, cum magni placeat accusamus? Eius, quas veniam. Nobis assumenda perferendis nesciunt temporibus similique qui sunt voluptatem, officia, doloremque officiis perspiciatis!
+          Maxime aliquam adipisci itaque architecto veritatis harum ab provident fugiat. Expedita quo, dolore quis pariatur deleniti exercitationem! Alias possimus pariatur voluptatem necessitatibus nostrum, minima soluta, dicta modi quae repellat excepturi.
+          Tempora, molestiae culpa blanditiis autem eius eligendi quis laboriosam quos magnam! Repellat deleniti perferendis odit enim explicabo exercitationem sint sit hic fugit vel sunt eligendi incidunt, voluptatum aperiam! Qui, blanditiis.
+          Modi adipisci tempore a iste sit, odit eveniet blanditiis sunt explicabo cupiditate qui. Consequatur illo suscipit error nisi harum recusandae eligendi ad, corporis illum quas. Inventore ipsam magni temporibus soluta!
+          Quam atque delectus architecto ipsa modi harum tempore labore perferendis placeat itaque tenetur, reiciendis porro? Commodi ex modi iste, et quaerat dolores doloribus temporibus, veritatis nobis vitae obcaecati, porro placeat.
+          Qui, esse blanditiis! Harum id quam voluptas ea ullam et nihil quia facilis nesciunt inventore cupiditate natus dolor dolore cum reiciendis sed nemo voluptate dolorum repellat ducimus nulla, obcaecati eum.
+          Fugit, quidem rem fugiat tempore iusto at maiores fuga ea alias culpa voluptas repudiandae excepturi iure asperiores nostrum nobis sunt, perferendis obcaecati. Porro facere architecto delectus, provident numquam possimus obcaecati!
+          Sint, aperiam eveniet optio, labore, corporis earum voluptates ut architecto inventore enim odit voluptas. Iste alias incidunt ipsa cumque, assumenda nostrum unde deleniti. Eum mollitia voluptate, exercitationem molestias recusandae veniam?
+          Ut odit voluptate aliquam alias nostrum quo cupiditate autem obcaecati voluptatem aperiam, velit maxime, non commodi nam consequatur facilis minus eligendi asperiores voluptates officia similique earum, dolor rerum quae. Aut.
+          Consequatur aperiam autem esse quaerat inventore qui! Fugit nostrum repellat esse vel maxime! Veniam, quasi corrupti dolores nesciunt, hic, pariatur consequatur officiis quam iure accusamus exercitationem magnam illum vel optio.
+          Quia earum dignissimos, fugit vitae saepe sit hic. Illum nisi dolorum esse omnis eius molestiae numquam dolor modi quidem cupiditate eveniet dolores, aliquid voluptates! Laudantium voluptatibus distinctio rerum magnam quia?
+          Ipsum obcaecati, asperiores fuga quaerat non nobis voluptates eum, minus sunt numquam, debitis accusamus a odit deleniti. Quisquam quas rerum minima in recusandae veritatis accusantium sunt praesentium? Labore, ab ex.
+          Placeat, voluptatibus nulla dolor nemo molestiae asperiores alias exercitationem id, ab ad deserunt vero voluptates laboriosam eveniet recusandae dolore unde sint officiis. Eos reprehenderit ea ipsa perferendis quam repudiandae hic!
+          Aspernatur labore doloremque quod, architecto repellendus sit cum placeat delectus velit? Fugiat aut autem vel doloremque in repellat magni eum cupiditate at hic accusamus explicabo eveniet ea minima, expedita beatae?
+          Ipsum quasi libero temporibus et modi! Dolores, facilis omnis. Non, itaque est, illo alias rem recusandae praesentium obcaecati voluptas quam debitis, accusamus vero doloribus inventore esse sint quod possimus velit!
+          Magnam corrupti mollitia, minus magni, harum asperiores saepe iste ipsam dolores nulla quo nemo dolore ea rerum modi tenetur labore dolor ex quibusdam facere nam, cupiditate delectus omnis voluptatem. Fuga.
+          Ad alias vitae necessitatibus natus quibusdam eveniet iusto. Repellendus distinctio, nihil pariatur eum corporis officiis quia odio voluptates at hic veritatis porro illo totam rerum ut quaerat accusantium velit autem?
+          Expedita similique possimus atque! Maxime rerum autem at quibusdam dolorum perspiciatis laborum eaque ab. Accusantium, commodi laboriosam expedita deserunt consequatur, veritatis totam facere repellat, eveniet fuga soluta unde sunt recusandae.
+          Rerum eaque, porro, provident corporis illo voluptates reiciendis cupiditate, totam dignissimos debitis repellat quae delectus quas officiis. Minima explicabo recusandae eligendi molestias repellat quis cum ea. Consequuntur, fuga tenetur? Quasi.
+          Accusamus illum repudiandae doloribus ab, distinctio assumenda minima officia officiis consectetur sapiente iusto sit dignissimos nihil! Consectetur, cupiditate. Dolorum maxime culpa sint, consequatur deleniti quia dicta enim aliquam consectetur suscipit!
+          Ratione eaque laudantium officia expedita, dolores quisquam reprehenderit dolorem hic laboriosam exercitationem dicta quo facilis perferendis cupiditate. Ex cupiditate, quidem sapiente illum nam cumque quas ut recusandae consequatur sint quia.
+          Recusandae, quae quibusdam mollitia laboriosam, quis obcaecati eanam ratione.
+          Quod harum hic quia culpa minus, aliquam facere perspiciatis, eaque ad quas velit ex vitae temporibus accusamus deserunt, earum laborum nemo vel tempore ducimus animi labore! Minus voluptas esse ipsa!
+          Neque porro veniam rem qui at commodi architecto repellat. Quis et id eaque aspernatur quod amet, nisi laborum fugiat ad maiores soluta accusamus tenetur, ratione odio non reiciendis. Porro, maiores!
+          Possimus voluptas inventore error itaque perspiciatis nobis, consequatur maxime nisi? Similique cupiditate corporis, nulla esse libero reiciendis at corrupti vero inventore, cum nemo. Autem veniam, officiis voluptatem accusantium facere ullam.
+          Nam accusantium quae et quidem, velit repellat incidunt, alias quam quasi laboriosam voluptatem, quos assumenda minus aspernatur fugiat nesciunt laborum atque culpa ut amet ab neque aut enim. Minima, excepturi.
+          Optio reiciendis quibusdam unde inventore doloribus, repudiandae quae totam, quod beatae eligendi, accusantium omnis earum corporis aut similique eveniet ipsum alias dolores deserunt quasi. Doloribus voluptas quos aliquam odio nostrum.
+          Quae voluptates architecto consequuntur quibusdam! Voluptas in expedita amet quia alias odit illo iure architecto. Nemo ratione nam architecto eligendi nobis error expedita quas aspernatur aut! Itaque ab soluta enim!
+          Nam voluptates saepe neque. Voluptatibus aperiam eaque nesciunt laborum, eius doloremque culpa porro optio ea eveniet magni, totam corrupti accusantium! Architecto consectetur inventore autem illo quaerat cupiditate quia, saepe fuga!
+          Consequatur, optio est laudantium quae expedita, eos quis at fugit repellendus sed praesentium perspiciatis autem earum deserunt, quaerat nobis omnis repellat officia ex? Illum cum quis tempore sunt ex placeat!
+          Quae amet earum natus iure harum vitae illo odit, incidunt porro enim blanditiis, voluptatum laboriosam officia quos vel id dolor atque praesentium in accusamus ex suscipit fuga quibusdam! Suscipit, non!
+          Molestiae, doloremque impedit incidunt quia repudiandae ratione praesentium a, ut ducimus officiis quisquam adipisci laboriosam quae placeat saepe sed reprehenderit corporis modi in voluptate nobis voluptatum ipsam recusandae rem. Incidunt?
+          Rem et veritatis nemo distinctio perferendis tenetur officiis quam, sunt aut inventore ipsa harum officia modi deleniti, ut similique facere autem quia ipsum eaque non laudantium accusantium assumenda. Facilis, ratione?
+          Itaque impedit officiis id fugit aliquid ea, tempore explicabo repellendus nesciunt ut quis, neque doloremque voluptatibus totam numquam, vel maxime laborum. Nisi mollitia reiciendis earum iure ducimus minus non consectetur.
+          Nostrum perspiciatis veniam sed! Odio perferendis perspiciatis sapiente rerum, autem et mollitia eligendi deserunt saepe iure voluptatem quae quaerat cupiditate ad veniam amet enim, qui accusantium! Quae nesciunt doloremque iste.
+          Aspernatur tempore porro voluptatem veniam, ab quod asperiores eligendi eaque aut animi placeat labore laborum laboriosam? Veniam provident perferendis quaerat, voluptate aut doloribus, a illum sapiente maxime delectus distinctio quisquam.
+          Nisi facilis error nobis hic dolorum deleniti est dicta asperiores tempora incidunt? Quod totam magni libero recusandae minima veritatis temporibus fugiat autem minus quae omnis, quisquam vel exercitationem maxime commodi.
+          Reprehenderit, et! Eius non veritatis cum sint ipsum impedit delectus nulla consequatur illo eligendi ratione, cumque esse accusantium et iure error sed nesciunt dolores! Recusandae vero dolorem aspernatur reiciendis culpa.
+          Illum, asperiores accusantium quidem reprehenderit ipsam hic accusamus velit dolore aliquam in! Ad, earum animi. Nostrum recusandae quam consectetur ea cupiditate odit at nulla eaque nemo laborum corrupti, minus dolorum!
+          Ipsam hic fugit nemo perferendis laudantium explicabo atque, est facilis, nostrum deserunt, molestias laborum ducimus amet inventore illum enim! Doloribus accusantium quis enim atque quibusdam voluptatibus consectetur. Dicta, quibusdam delectus.
+          Ratione corporis suscipit sunt consectetur id, magni in ipsa, alias vero necessitatibus veniam eaque sit illo quidem vitae optio cumque tenetur eveniet facilis ipsam a illum at porro modi. Impedit?
+          Deleniti asperiores commodi corporis sed iusto expedita consequuntur. Dignissimos quisquam doloribus consequuntur asperiores sed impedit sapiente, earum perferendis velit? Nesciunt veritatis corporis suscipit necessitatibus quidem tempora voluptatum magnam ad autem.
+          Delectus ipsum accusantium commodi suscipit nulla tempore dolores quasi maxime doloremque sunt labore porro quaerat tempora doloribus, iste neque optio consectetur ut, veritatis sapiente est vitae aut! Suscipit, voluptas nulla!
+          Modi ratione id ad voluptatum doloribus tempore, atque adipisci inventore, accusamus quo porro quos quia assumenda a, rem ipsum dolore dicta voluptatibus obcaecati architecto! Temporibus et pariatur consequuntur! Architecto, natus.
+          Praesentium quibusdam doloremque inventore obcaecati unde minus commodi facilis voluptate aspernatur sunt laborum rem harum tempora reprehenderit nihil necessitatibus repudiandae aperiam, officia ullam laudantium. Nisi earum esse hic sapiente iusto!
+          A quaerat quibusdam laudantium nemo! Quisquam illo veniam beatae a sit quod natus temporibus at in error laborum nisi odio cumque iusto atque, ducimus, enim debitis consequatur culpa mollitia alias?
+          Dolores neque, animi libero at dignissimos excepturi optio ipsum nihil! Consectetur magnam enim nobis eaque porro eveniet ut neque accusantium nisi asperiores officia accusamus ipsa distinctio, beatae rerum nam. Fugit?
+          Soluta iusto numquam obcaecati, error praesentium nostrum expedita, illo nesciunt repudiandae earum corporis enim velit quibusdam voluptatem unde minus iure esse! Culpa error in recusandae obcaecati molestiae temporibus, omnis dignissimos.
+          Labore, minus debitis voluptatem nesciunt ea minima eveniet voluptates qui dolorum tempora, sed animi porro inventore nulla mollitia repellendus provident reprehenderit! Numquam mollitia laudantium quos? Deserunt nam nihil voluptates velit?
+          Itaque unde recusandae ex. Earum dolore soluta deserunt tenetur ex alias porro amet totam ab corporis et, maxime consequuntur distinctio provident ratione iure, doloribus magni error odio assumenda veniam quo.
+          Reiciendis voluptate sint accusamus, eos eligendi amet similique non reprehenderit soluta consectetur obcaecati in, provident nesciunt, fuga ullam eaque natus perspiciatis quasi? Maiores rerum corporis pariatur eligendi excepturi, et dolorum?
+          Eum quibusdam assumenda ipsa vero natus esse dolorum culpa quia sint adipisci est mollitia, voluptate delectus maiores ad consectetur officia recusandae iusto molestiae repudiandae aspernatur libero nisi beatae laudantium? Facere?
+          Hic sapiente nemo laboriosam atque ipsa quos quaerat placeat, animi illo, fuga iste eius? Molestiae beatae omnis quaerat a consequatur. Ipsum consequatur, corrupti tempora reprehenderit tempore ab error ea deserunt.
+          Suscipit illo, tempore tenetur labore nihil repellat accusantium, neque iure, amet debitis ipsam quos odit? Officiis, esse. Vitae porro, non quod perspiciatis, qui, harum molestiae adipisci dolore ex illum in.
+          Officia incidunt dolores reprehenderit quia magnam nulla, saepe fugiat sunt voluptatem aliquid ipsum inventore, provident quaerat fuga ducimus rem alias corrupti! Fugiat libero sed sunt aperiam quasi praesentium quia laborum?
+          Reprehenderit pariatur aliquam in non distinctio eos corrupti accusantium, repellat maxime reiciendis unde quis dolor consequuntur ex cumque minus adipisci tenetur dolore tempore, beatae, illo odio! Voluptate ducimus consectetur magnam!
+          Est in deleniti tempore iure. Eaque minima modi voluptatem odio, placeat pariatur explicabo quibusdam, possimus aliquam nam iste debitis ducimus, vel quisquam? Dolorum atque iusto aut nulla minus, nihil dicta.
+          Expedita minus repellendus debitis consequuntur optio possimus voluptatibus iusto est maiores hic, magnam nostrum dolorem sequi saepe voluptatum enim quis ipsam temporibus totam numquam placeat vel labore, ratione quae. Exercitationem.
+          Minus, quis ipsam culpa et quas necessitatibus velit tempora repellat quo? Unde rerum laborum inventore ipsa? Autem hic tenetur minima sequi possimus porro asperiores dolorum distinctio cumque. Dignissimos, nostrum culpa?
+          Ratione ex hic beatae iste esse, quisquam aspernatur? Quis perferendis excepturi vitae laboriosam dolores est, fugiat maiores fugit cumque quos totam, libero voluptatum nihil quae voluptas? Voluptatibus dolorem et quia!
+          Provident autem expedita blanditiis dignissimos inventore iure quo doloribus error, alias optio deleniti. Rerum quisquam minus, iusto laudantium assumenda iure repellat aperiam nesciunt deleniti, reprehenderit quo atque distinctio soluta sed!
+          Sed eos est non commodi debitis repellat culpa. Ex, voluptatibus! Veniam ipsam sint officia tempore minima sapiente laboriosam provident repudiandae quisquam deserunt, commodi id. Magnam maiores consectetur a autem possimus.
+          Distinctio sed beatae voluptas error numquam cum adipisci inventore enim nisi ex similique, doloribus accusantium perspiciatis autem perferendis quaerat officiis nulla quisquam corrupti quis, exercitationem nobis porro. Corrupti, magni et.
+          Alias totam inventore minus soluta. Recusandae asperiores nam libero saepe illo enim, amet alias reprehenderit, ipsam sunt maiores tempora distinctio blanditiis explicabo aperiam labore praesentium, culpa est autem. Qui, quasi.
+          Error reiciendis nemo consequatur soluta ea, debitis a perferendis non vel enim repellendus adipisci dicta delectus quas magnam voluptatem natus dignissimos tenetur earum aspernatur dolore ipsam corrupti! Eaque, dolor non.
+          Consequatur, optio minus! Sed aliquid cumque voluptatum esse sit, est dicta adipisci expedita in? Ipsam eum eius pariatur architecto, repellendus cupiditate fugit nisi voluptate, labore veritatis omnis impedit, consequuntur incidunt.
+          Laboriosam quisquam suscipit, neque autem unde consequuntur impedit magnam quidem possimus officia corporis ratione qui reprehenderit ducimus sapiente provident vel sit nostrum earum ad! Sunt nesciunt nisi neque hic sequi.
+          Eligendi, placeat, perspiciatis ab quod enim illo adipisci eum debitis asperiores repellat dolore doloremque corporis autem hic quae consequuntur incidunt expedita accusamus minus quaerat. Ducimus tenetur quisquam illum soluta earum.
+          Eius ut pariatur, qui cumque ea excepturi molestiae eaque quas culpa tempore nisi. Ea, explicabo dignissimos vitae adipisci deleniti quis sed perferendis asperiores aliquam ut ullam dolorum consequatur suscipit facere!
+          Excepturi sunt facere sapiente commodi delectus possimus quisquam minima nobis culpa libero molestiae neque ab tempore, dolorum esse praesentium at. A quasi aut magnam quam placeat molestiae et animi cumque.
+          Atque consequatur, rerum sit accusamus facilis in veritatis delectus ipsum, illum numquam perferendis, saepe non voluptatem quo tempore. Quasi maxime impedit dolore aspernatur distinctio, ex eum delectus sapiente voluptatibus nesciunt?
+          Dolorum, non! Placeat neque, quam non, reiciendis, tenetur voluptatibus saepe natus minima facere earum maxime et dolor numquam ipsum libero dicta fuga doloremque consequatur unde illum architecto? Ipsum, quam aspernatur.
+          Laboriosam ullam iste nam reiciendis, perspiciatis optio sed possimus in odit rerum consectetur provident dolorem autem commodi cupiditate necessitatibus quas deserunt quidem quisquam minima sapiente. Ab omnis provident voluptas facilis!
+          Culpa quas maxime ratione mollitia illum veritatis eveniet vitae expedita vel minus qui, aperiam molestias laudantium? Quas nostrum recusandae reprehenderit vel unde eaque nulla omnis corrupti. Cupiditate laborum nobis qui.
+          Adipisci quidem quas fugit ducimus porro esse sapiente suscipit, voluptate cupiditate debitis vero voluptatibus vel odio saepe incidunt eum nobis sint placeat aliquid accusantium ut ipsum ea reprehenderit fuga! Odit?
+          Rem qui cupiditate, quam, suscipit corrupti animi sit repellat tempore consequuntur eligendi alias. Voluptatum quam quibusdam ad ea iure fugiat saepe! Tenetur corrupti distinctio adipisci, ipsum vero excepturi necessitatibus cupiditate!
+          Corrupti itaque veniam in vero soluta, deleniti perspiciatis nostrum, alias laborum excepturi quidem, ipsam fuga vitae sed sint temporibus accusantium eligendi! Consequatur mollitia error dolorem reprehenderit provident animi rerum cumque.
+          Enim neque odit facere atque quaerat alias soluta. Et fugiat earum quos id, sint quisquam unde. Explicabo distinctio unde impedit ab velit, debitis perspiciatis! Quas incidunt qui alias assumenda distinctio.
+          Cum nulla suscipit veritatis molestias fuga, autem corrupti dolorum dolore magnam omnis voluptatum dolores ipsam tempora, quos ipsa reiciendis magni exercitationem illo dicta delectus asperiores, reprehenderit quis perferendis repellat? Asperiores.
+          Repudiandae iure expedita modi quas possimus eligendi nam laborum, consequatur nisi illum reprehenderit itaque recusandae, atque sit quasi. Nemo unde placeat ipsum similique excepturi, enim suscipit eligendi saepe? Debitis, deserunt!
+          Laborum earum nobis, fuga quod ad officia porro voluptates unde deserunt molestias autem corporis facere omnis accusamus facilis, ab molestiae corrupti, deleniti ratione nostrum non reprehenderit nam ea iste? Officiis.
+          Odit non soluta praesentium eaque vel magnam laboriosam? Laudantium ea delectus consectetur veritatis voluptatem, quam tenetur minus exercitationem nemo, corrupti labore, molestias doloribus! Suscipit similique nostrum aut nemo animi cum.
+          Similique molestiae esse totam quos ratione corrupti saepe error ea expedita veritatis fugit exercitationem sequi ut asperiores numquam non iusto temporibus dicta, dolorum itaque voluptatem, placeat mollitia magnam? Aliquam, molestias!
+          Distinctio tempora expedita dolores, magnam veniam harum vitae ex corporis praesentium labore illum aut asperiores at aliquid? Est cumque repellat nulla harum quam alias cum. Aut eos porro unde sequi?
+          Labore corrupti expedita aut obcaecati ratione mollitia quia omnis. Accusamus alias optio dignissimos error molestias consequatur eos, dolore quod sequi, eum doloremque soluta maxime voluptates laudantium. Similique rerum facere quibusdam!
+          Quam iste odio animi temporibus suscipit dolor accusamus molestias odit ab unde corporis velit, a consequatur, voluptatum debitis rem quaerat sequi! Eius praesentium obcaecati neque optio distinctio perspiciatis, odio vel.
+          Consequuntur numquam facilis nobis deleniti labore. Quas, ipsam ipsum, illo quo sequi ipsa dolorem accusamus molestias minima quia voluptas enim aliquid mollitia deleniti quidem quae repellendus. Cum eos molestias in!
+          Nesciunt accusamus dolores eveniet explicabo iure minus repellat, libero fuga sit assumenda possimus alias mollitia sequi blanditiis at consequatur saepe est reiciendis? Suscipit, minima maxime? Perferendis quia laborum ipsum aliquid.
+          Odio facere sit quia ratione? Minima labore similique, dicta officiis suscipit doloremque voluptatem atque sapiente, dolorem reiciendis impedit, provident voluptatum beatae eum repellendus hic? Necessitatibus eius molestiae illum. Optio, dolorum.
+          Nam atque eos ipsam ducimus repellat tempora adipisci et aperiam itaque! Odio sit ab quas repellendus, accusamus explicabo veniam mollitia iure, ducimus numquam at! Asperiores voluptatum veniam minima inventore deserunt?
+          Modi blanditiis nesciunt officia voluptas recusandae hic a architecto quae, laboriosam numquam. Delectus consequuntur incidunt dignissimos reprehenderit recusandae aliquam, maxime cum neque accusamus voluptatem perspiciatis, possimus ex doloribus ab tempora.
+          Iusto voluptas dolore numquam omnis consequatur maiores vitae aliquam eius totam nobis, perferendis, quia eligendi quas tenetur nihil fugit quaerat et dolorem nisi voluptates cupiditate delectus, excepturi exercitationem ullam. Quo.
+          Laborum fugiat dolor eius rerum assumenda neque reiciendis harum asperiores laudantium? Excepturi dignissimos quod, placeat optio aspernatur laboriosam animi mollitia molestiae modi, alias deserunt! Quam fuga ipsa laudantium nisi illum.
+          Accusantium autem tenetur sed iure molestias voluptates accusamus quod illum quae aperiam ea temporibus, esse animi ipsum inventore est tempore omnis recusandae! Totam, veniam nesciunt at adipisci eaque quod odio!
+          Exercitationem enim dolore, impedit aspernatur aliquid quidem fugiat sint repudiandae aliquam qui quam dolores? Amet, nesciunt. Earum atque delectus quibusdam dignissimos nesciunt id perspiciatis rerum! Velit commodi deleniti quos? Eligendi.
+          Nisi aut libero neque quos optio totam quam rerum dolor odit unde laudantium impedit repellendus minus placeat, enim laborum nostrum recusandae illum dicta debitis? Quibusdam sit perferendis quos error eius!
+          Nemo numquam possimus nisi tempore quaerat nostrum quia, quidem expedita? Voluptates, laborum dolorum perferendis et consectetur natus porro sit magni ipsum cumque atque dolore facilis maiores modi. Vero, expedita officiis.
+          Necessitatibus unde architecto quasi veniam quisquam deserunt, iure consequatur molestias reiciendis odit sequi distinctio! Ipsum nostrum aut, sed iure odio, labore esse autem reprehenderit quae voluptatum placeat facilis culpa dolorum.
+          Itaque at laboriosam dolore, porro eius facere nam dicta dolor eos consequuntur earum debitis numquam omnis. In vitae sequi deleniti quasi ipsa beatae iste ex fugit nostrum minus? Tempora, consequatur?
+          Ducimus voluptas illum necessitatibus enim, voluptatem eaque expedita commodi ut atque consectetur, nesciunt non ea hic? Omnis, corporis voluptatem! Fuga, officiis! Eutur, magnam? Aut corporis animi nesciunt! Expedita quaerat enim laudantium magni similique quisquam doloremque? Eum sapiente aliquid, similique optio nostrum magnam eos cupiditate provident!
+          Perspiciatis quo sint excepturi quos voluptate possimus incidunt, ratione, et, fuga placeat ab dolores amet voluptas sed eum asperiores error nostrum. Doloribus at dolorem quam esse! Autem quia porro commodi.
+          Reiciendis quas ipsa minima aspernatur dolorem amet nemo molestias, sint temporibus at minus. Accusantium quas, eligendi quam at consequatur error ea. Molestiae sint officia at iure, quod deserunt pariatur aperiam.
+          Repudiandae libero nihil molestias beatae exercitationem quod nostrum recusandae laborum. Reprehenderit quisquam esse vel quos. Itaque, cupiditate qui! Quae accusamus earum maiores dolor reprehenderit distinctio eos quidem voluptatibus minima voluptatum!</p>
+        </div>
+       </div> 
+      </div>
+    </div> <!--!--------Flag------------>
+      <script src="nav.js"></script>
+      <script src="abt.js"></script>
   </body>
 </html>
