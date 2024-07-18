@@ -16,6 +16,7 @@
 .side-bar{
     height: 70vh;
       padding: 0px 5px 0px 0px;
+      z-index: 1;
 }
 ::-webkit-scrollbar{
     width: 5px;
@@ -78,6 +79,7 @@
  display: flex;
  justify-content: center;
  align-items: center;
+
  }
  button:hover{
      color: white;
