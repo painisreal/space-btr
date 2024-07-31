@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/logoicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Space-btr</title>
+  </head>
+
+  <body class="text-white px-2 py-1 ">  <!--lg:w-7/12 m-x> -->
+<div class="opt">
+      <div class="rounded-2xl">
+        <header class="bg-zinc-950 flex justify-between items-center p-2 py-3 rounded-tr-2xl rounded-tl-2xl">
+          <div id="nav-button" class="" onclick="shownav() ,closeabt()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 256 256"
+            >
+              <path
+                fill="currentColor"
+                d="M245.11 60.68c-7.65-13.19-27.84-16.16-58.5-8.66A95.93 95.93 0 0 0 32 128a98 98 0 0 0 .78 12.31C5.09 169 5.49 186 10.9 195.32C16 204.16 26.64 208 40.64 208a124.11 124.11 0 0 0 28.79-4A95.93 95.93 0 0 0 224 128a97.08 97.08 0 0 0-.77-12.25c12.5-13 20.82-25.35 23.65-35.92c1.95-7.32 1.36-13.76-1.77-19.15M128 48a80.11 80.11 0 0 1 78 62.2c-17.06 16.06-40.15 32.53-62.07 45.13c-27.55 15.81-51.45 25.67-70.51 31.07A79.94 79.94 0 0 1 128 48M24.74 187.29c-1.46-2.51-.65-7.24 2.22-13a79.05 79.05 0 0 1 10.29-15.05a96 96 0 0 0 18 31.32c-17.25 2.9-28.01 1.05-30.51-3.27M128 208a79.45 79.45 0 0 1-38.56-9.94a370 370 0 0 0 62.43-28.86c21.58-12.39 40.68-25.82 56.07-39.08A80.07 80.07 0 0 1 128 208M231.42 75.69c-1.7 6.31-6.19 13.53-12.63 21.13a95.69 95.69 0 0 0-18-31.35c14.21-2.35 27.37-2.17 30.5 3.24c.9 1.57.95 3.92.13 6.98"
+              />
+            </svg>
+          </div>
+          <div class="text-center">
+            <h1 class="text-4xl font-mono font-extrabold tracking-tighter">
+              SPACE BTR
+            </h1>
+            <h6 class="text-xs">A place where you can explore the real beauty</h6>
+          </div>
+          <div onclick="openabt(),closenav()" class="w-10 h-10">
+            <img
+              src="images/logo.jpg"
+              alt="logo"
+              class="shadow shadow-white rounded-full"
+            />
+          </div>
+        </header>
+        <!-- !nav bar side -->
+       <div id="sidebar" class=" hidden">
+          <nav class="sidebar  glass-bg w-4/5  rounded-md  flex-col" id="sidebar-srl" >
+            <header class="flex justify-between items-center" >
+              <div class="py-3 px-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M245.11 60.68c-7.65-13.19-27.84-16.16-58.5-8.66A95.93 95.93 0 0 0 32 128a98 98 0 0 0 .78 12.31C5.09 169 5.49 186 10.9 195.32C16 204.16 26.64 208 40.64 208a124.11 124.11 0 0 0 28.79-4A95.93 95.93 0 0 0 224 128a97.08 97.08 0 0 0-.77-12.25c12.5-13 20.82-25.35 23.65-35.92c1.95-7.32 1.36-13.76-1.77-19.15M128 48a80.11 80.11 0 0 1 78 62.2c-17.06 16.06-40.15 32.53-62.07 45.13c-27.55 15.81-51.45 25.67-70.51 31.07A79.94 79.94 0 0 1 128 48M24.74 187.29c-1.46-2.51-.65-7.24 2.22-13a79.05 79.05 0 0 1 10.29-15.05a96 96 0 0 0 18 31.32c-17.25 2.9-28.01 1.05-30.51-3.27M128 208a79.45 79.45 0 0 1-38.56-9.94a370 370 0 0 0 62.43-28.86c21.58-12.39 40.68-25.82 56.07-39.08A80.07 80.07 0 0 1 128 208M231.42 75.69c-1.7 6.31-6.19 13.53-12.63 21.13a95.69 95.69 0 0 0-18-31.35c14.21-2.35 27.37-2.17 30.5 3.24c.9 1.57.95 3.92.13 6.98"
+                  />
+                </svg>
+              </div>
+              <div class="text-3xl font-mono font-bold tracking-tighter">
+                Explore
+              </div>
+              <div id="close" class="mx-2" onclick="closenav()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7q.275-.275.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275q.275.275.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7q-.275.275-.7.275t-.7-.275z"
+                  />
+                </svg>
+              </div>
+            </header>
+            <div class="scrollbox overflow-auto">
+              <div class="scrollbox-inner ">
+                <!-- !content area -->
+                <div class="">
+                  <div class="items hfif p-1">
+                    <!-- !single-items -->
+                    <div
+                      class="item outline m-1.5 my-2 p-1 outline-1 rounded-md flex items-center"
+                    >
+                      <div class="m-2 grid grid-cols-1">
+                        <!--* 000000000000000 -->
+                        <div class="planets mercury"></div>
+                      </div>
+                      <div class="about mx-3 p-0 w-1/2">
+                        <h1 class="text-lg">
+                          <p class="font-extrabold">Mercury</p>
+                          <p class="text-xs">
+                            The smallest and closest planet to the Sun, known for
+                            its extreme temperatures.
+                          </p>
+                        </h1>
+                      </div>
+                    </div>
+                    <!-- !single-items -->
+                    <div
+                      class="item outline m-1.5 my-2 p-1 outline-1 rounded-md flex items-center"
+                    >
+                      <div class="m-2 grid grid-cols-1">
+                        <!--* 000000000000000 -->
+                        <div class="planets venus"></div>
+                      </div>
+                      <div class="about mx-3 p-0 w-1/2">
+                        <h1 class="text-lg">
+                          <p class="font-extrabold">Venus</p>
+                          <p class="text-xs">
+                            Earth's "sister planet" with a thick, toxic atmosphere
+                            and surface temperatures hot enough to melt lead.
+                          </p>
+                        </h1>
+                      </div>
+                    </div>
+                    <!-- !single-items -->
+    
+                    <div
+                      class="item outline m-1.5 my-2 p-1 outline-1 rounded-md flex items-center"
+                    >
+                      <div class="m-2 grid grid-cols-1">
+                        <!--* 000000000000000 -->
+    
+                        <div class="planets earth"></div>
+                      </div>
+                      <div class="about mx-3 p-0 w-1/2">
+                        <h1 class="text-lg">
+                          <p class="font-extrabold">Earth</p>
+                          <p class="text-xs">
+                            The only planet known to support life, with diverse
+                            ecosystems and liquid water.
+                          </p>
+                        </h1>
+                      </div>
+                    </div>
+    
+                    <!-- !single-items -->
+                    <div
+                      class="item outline m-1.5 my-2 p-1 outline-1 rounded-md flex items-center"
+                    >
+                      <div class="m-2 grid grid-cols-1">
+                        <!--* 000000000000000 -->
+    
+                        <div class="planets mars"></div>
+                      </div>
+                      <div class="about mx-3 p-0 w-1/2">
+                        <h1 class="text-lg">
+                          <p class="font-extrabold">Mars</p>
+                          <p class="text-xs">
+                            The "Red Planet," famous for its red color, ancient
+                            riverbeds, and the largest volcano in the solar system.
+                          </p>
+                        </h1>
+                      </div>
+                    </div>
+                    <!-- !single-items --><!-- !single-items -->
+                    <div
+                      class="item outline m-1.5 my-2 p-1 outline-1 rounded-md flex items-center"
+                    >
+                      <div class="m-2 grid grid-cols-1">
+                        <!--* 000000000000000 -->
+    
+                        <div class="planets jupiter"></div>
+                      </div>
+                      <div class="about mx-3 p-0 w-1/2">
+                        <h1 class="text-lg">
+                          <p class="font-extrabold">Jupiter</p>
+                          <p class="text-xs">
+                            The largest planet, a gas giant known for its Great Red
+                            Spot and dozens of moons.
+                          </p>
+                        </h1>
+                      </div>
+                    </div>
+                    <!-- !single-items --><!-- !single-items -->
+                    <div
+                      class="item outline m-1.5 my-2 p-1 outline-1 rounded-md flex items-center"
+                    >
+                      <div class="m-2 grid grid-cols-1">
+                        <!--* 000000000000000 -->
+    
+                        <div class="planets saturn"></div>
+                      </div>
+                      <div class="about mx-3 p-0 w-1/2">
+                        <h1 class="text-lg">
+                          <p class="font-extrabold">Saturn</p>
+                          <p class="text-xs">
+                            The second-largest planet, distinguished by its
+                            extensive and bright ring system.
+                          </p>
+                        </h1>
+                      </div>
+                    </div>
+                    <!-- !single-items --><!-- !single-items -->
+                    <div
+                      class="item outline m-1.5 my-2 p-1 outline-1 rounded-md flex items-center"
+                    >
+                      <div class="m-2 grid grid-cols-1">
+                        <!--* 000000000000000 -->
+    
+                        <div class="planets uranus"></div>
+                      </div>
+                      <div class="about mx-3 p-0 w-1/2">
+                        <h1 class="text-lg">
+                          <p class="font-extrabold">Uranus</p>
+                          <p class="text-xs">
+                            An ice giant with a unique sideways rotation and faint
+                            rings.
+                          </p>
+                        </h1>
+                      </div>
+                    </div>
+                    <!-- !single-items -->
+                    <div
+                      class="item outline m-1.5 my-2 p-1 outline-1 rounded-md flex items-center"
+                    >
+                      <div class="m-2 grid grid-cols-1">
+                        <!--* 000000000000000 -->
+    
+                        <div class="planets neptune"></div>
+                      </div>
+                      <div class="about mx-3 p-0 w-1/2">
+                        <h1 class="text-lg">
+                          <p class="font-extrabold">Neptune</p>
+                          <p class="text-xs">
+                            The farthest planet from the Sun, an ice giant known for
+                            its intense blue color and strong winds.
+                          </p>
+                        </h1>
+                      </div>
+                    </div>
+                    <!-- !single-items -->
+                    <div
+                      class="item outline m-1.5 my-2 p-1 outline-1 rounded-md flex items-center"
+                    >
+                      <div class="m-2 grid grid-cols-1">
+                        <!--* 000000000000000 -->
+                        <div class="planets pluto"></div>
+                      </div>
+                      <div class="about mx-3 p-0 w-1/2">
+                        <h1 class="text-lg">
+                          <p class="font-extrabold">Pluto</p>
+                          <p class="text-xs">
+                            It is declared as a darf planet. It is about the size of
+                            austrlia
+                          </p>
+                        </h1>
+                      </div>
+                    </div>
+                    <!-- !single-items -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+       </div>
+      </div>
+      <!-- !abt us box -->
+      <div
+        id="abt_card_id"
+        class="side-bar overflow-auto about-us-container  hidden text-gray-950 bg-purple-300 pl-1 "
+      >
+        <div class="bg-purple-300 sticky top-0">
+          <div class="box-1 flex justify-around">
+            <aside class="aside-1">
+              <img src="images/logo.jpg" alt="" class="w-24 rounded-lg m-1" />
+            </aside>
+            <aside
+              class="aside-2 flex justify-center items-center m-1 w-2/5 text-center font-extrabold text-3xl mr-12"
+            >
+              <p class="text-center">About Us</p>
+              <div onclick="closeabt()">
+                <svg
+                  class="font-extrabold absolute top-3 right-3"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M437.5 386.6L306.9 256l130.6-130.6c14.1-14.1 14.1-36.8 0-50.9-14.1-14.1-36.8-14.1-50.9 0L256 205.1 125.4 74.5c-14.1-14.1-36.8-14.1-50.9 0-14.1 14.1-14.1 36.8 0 50.9L205.1 256 74.5 386.6c-14.1 14.1-14.1 36.8 0 50.9 14.1 14.1 36.8 14.1 50.9 0L256 306.9l130.6 130.6c14.1 14.1 36.8 14.1 50.9 0 14-14.1 14-36.9 0-50.9z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </aside>
+          </div>
+        </div>
+        <!-- -----------us------------------- -->
+        <div class="us-container">
+          <div class="us">
+            <div
+              class="us-1 border-2 p-2 m-2 rounded-md flex justify-center items-center"
+            >
+              <img
+                src="images/tamizh profile-pic.png"
+                alt="img"
+                class="mx-2 border-2 rounded-full w-5/12"
+              />
+              <div class="place-self-center mx-auto">
+                <div class="text-center font-semibold text-2xl">
+                  Tamizh Amuthan
+                  <!-- <p class="text-sm font-normal">S/O Mr.Ravanan& Mrs.Ravanan</p> -->
+                  <p class="text-xl font-extrabold">CEO</p>
+                  <p class="text-base">HR Manager</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="us-1 border-2 p-2 m-2 rounded-md flex justify-center items-center"
+            >
+              <img
+                src="images/bala profile-pic.png"
+                alt="img"
+                class="mx-2 border-2 rounded-full w-5/12"
+              />
+              <div class="place-self-center mx-auto">
+                <div class="text-center font-semibold text-2xl">
+                  Balasubramanian
+                  <!-- <p class="text-sm font-normal">S/O Mr.Ravanan& Mrs.Ravanan</p> -->
+                  <p class="text-xl font-extrabold">CMO</p>
+                  <p class="text-base">Content Creator</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="us-1 border-2 p-2 m-2 rounded-md flex justify-center items-center"
+            >
+              <img
+                src="images/profile-pic (3).png"
+                alt="img"
+                class="mx-2 border-2 rounded-full w-5/12"
+              />
+              <div class="place-self-center mx-auto">
+                <div class="text-center font-semibold text-2xl">
+                  Riknesh
+                  <!-- <p class="text-sm font-normal">S/O Mr.Ravanan& Mrs.Ravanan</p> -->
+                  <p class="text-xl font-extrabold">CTO</p>
+                  <p class="text-base">Developer</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="us-1 border-2 p-2 m-2 rounded-md flex justify-center items-center"
+            >
+              <img
+                src="images/woman.png"
+                alt="img"
+                class="mx-2 border-2 rounded-full w-5/12"
+              />
+              <div class="place-self-center mx-auto">
+                <div class="text-center font-semibold text-2xl">
+                  Rakshitha Ramesh
+                  <!-- <p class="text-sm font-normal">S/O Mr.Ravanan& Mrs.Ravanan</p> -->
+                  <p class="text-xl font-extrabold"></p>
+                  <p class="text-base">Designer</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="us-1 border-2 p-2 m-2 rounded-md flex justify-center items-center"
+            >
+              <img
+                src="images/boy.png"
+                alt="img"
+                class="mx-2 border-2 rounded-full w-5/12"
+              />
+              <div class="place-self-center mx-auto">
+                <div class="text-center font-semibold text-2xl">
+                  Dhanush
+                  <!-- <p class="text-sm font-normal">S/O Mr.Ravanan& Mrs.Ravanan</p> -->
+                  <p class="text-xl font-extrabold"></p>
+                  <p class="text-base">Media (Editor)</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="us-1 border-2 p-2 m-2 rounded-md flex justify-center items-center"
+            >
+              <img
+                src="images/woman.png"
+                alt="img"
+                class="mx-2 border-2 rounded-full w-5/12"
+              />
+              <div class="place-self-center mx-auto">
+                <div class="text-center font-semibold text-2xl">
+                  Dharshini
+                  <!-- <p class="text-sm font-normal">S/O Mr.Ravanan& Mrs.Ravanan</p> -->
+                  <p class="text-xl font-extrabold"></p>
+                  <p class="text-base">Media (Editor)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-zinc-950 rounded-br-2xl rounded-bl-2xl">
+       <div class="contents-main">
+        <div class="dummy-para p-2">
+          <div class="mail-container">
+            <img src="images/logo.jpg" alt="">
+              <p class="prompt">Enter your name and mail to recive updates...😉</p>
+            <form action="" name="submit-to-google-sheet">
+                <fieldset>
+                    <legend>Name</legend>
+                    <input type="text" name="User_Name" placeholder="Enter your name" autofocus required>
+                </fieldset>
+                <fieldset>
+                    <legend>Mail</legend>
+                        <input type="email" name="User_mail" id="" placeholder="Enter your mail" required>
+                </fieldset>
+                <button type="submit" onclick="alert('You can trust us your data are safe. . . . Data sending. . . .   Please wait for 5 seconds.')">
+                   <p> Send</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="m21.433 4.861l-6 15.5a1 1 0 0 1-1.624.362l-3.382-3.235l-2.074 2.073a.5.5 0 0 1-.853-.354v-4.519L2.309 9.723a1 1 0 0 1 .442-1.691l17.5-4.5a1 1 0 0 1 1.181 1.329ZM19 6.001L8.032 13.152l1.735 1.66L19 6Z"/></g></svg>
+                </button>
+            </form>
+            <span id="msg"></span>
+        </div>
+        </div>
+       </div> 
+      </div>
+    </div> <!--!--------Flag------------>
+      <script src="nav.js"></script>
+      <script src="abt.js"></script>
+      <script src="alert.js"></script>
+       <script src="mail.js"></script>
+  </body>
+</html>
